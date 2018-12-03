@@ -14,6 +14,9 @@ var app = {
       case 'home':
         app.home();    
         break;
+      case 'contacts':
+        app.contacts();
+        break;
       default:
         // statements_def
         break;
@@ -40,15 +43,20 @@ var app = {
       //watchOverflow : true
       //spaceBetween: 1
     });
-    initMap();
+    initMap('home');
+  },
+  contacts : function(){
+    initMap('contacts');
   }
 }
 
-function initMap() {
+function initMap(page) {
+  var center = (page == 'home' ? {lat: -40.971740, lng: 180.760507} : {lat: -40.971740, lng: 174.760507})
+
 	map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 6,
     scrollwheel: false,
-		center: {lat: -40.971740, lng: 180.760507},		
+		center: center,
 		mapTypeControl: false,
 		scaleControl: false,
 		streetViewControl: false,
