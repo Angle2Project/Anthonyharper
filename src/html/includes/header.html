@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title><%=title%></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="https://fonts.googleapis.com/css?family=Hind:500,600" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper.min.css"> -->
+  <link rel="stylesheet" href="css/style.bundle.css">
+</head>
+
+<body class="<%=name%>">
+	<div id="main-scroll">
+	  <header>
+	    <div class="wrapper">
+	      <div class="header__logo">
+	      <a href="./">
+	        <img src="./img/header-logo.svg" alt="">
+	      </a>
+	      </div>
+	      <ul class="header__nav">      	
+	        <li class="<% if (name == "home") { %>current<% } %>">
+	          <a href="./">Home</a>
+	        </li>
+	        <li class="<% if (name == "about") { %>current<% } %>">
+	          <a href="about-us.html">About US</a>
+	        </li>
+	        <li class="<% if (name == "specialities") { %>current<% } %>">
+	          <a href="specialities.html">Our Specialties</a>
+	        </li>
+	        <li class="<% if (name == "") { %>current<% } %>">
+	          <a href="">Our Thinking</a>
+	        </li>
+	        <li class="<% if (name == "careers") { %>current<% } %>">
+	          <a href="careers.html">Careers</a>
+	        </li>
+	      </ul>
+	      <div class="header__tocontacts">
+	        <a href="contact-us.html" data-text="Contact Us"></a>
+	      </div>
+	    </div>
+	  </header>
+	  <!-- /header -->
+
+
+	  <main>

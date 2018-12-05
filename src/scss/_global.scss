@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'LucidaGrande';
+    src: url('../fonts/LucidaGrande.eot');
+    src: url('../fonts/LucidaGrande.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LucidaGrande.woff2') format('woff2'),
+        url('../fonts/LucidaGrande.woff') format('woff'),
+        url('../fonts/LucidaGrande.ttf') format('truetype'),
+        url('../fonts/LucidaGrande.svg#LucidaGrande') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+#main-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+.wrapper {
+  width: 1600px;
+  margin: auto;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(76, 92, 79, 0.5);
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(76, 92, 79, 0.5);
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(76, 92, 79, 0.5);
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: rgba(76, 92, 79, 0.5);
+}
+
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(76, 92, 79, 0.5);
+}
+textarea::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(76, 92, 79, 0.5);
+}
+textarea:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(76, 92, 79, 0.5);
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: rgba(76, 92, 79, 0.5);
+}
+
+.orange-button {
+  width: 316px;
+  height: 62px;
+  display: block;
+  background-color: $orange;  
+  font-family: Hind;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  position: relative;  
+  transition: all 300ms ease;
+    &.short {
+      width: 200px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      transition: all 300ms ease;
+      background-color: $buttonHover;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+    & span {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;      
+      padding-left: 32px;  
+      z-index: 1;
+      position: relative;
+        &::before {
+          content: "";
+          display: block;
+          height: 1px;
+          width: 54px;
+          background-color: #fff;
+          position: absolute;
+          right: 36px;
+          top: calc(50% - 1px);
+          transition: all 300ms ease;        
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 3.5px solid transparent;
+          border-left: 4px solid #fff;
+          border-bottom: 3.5px solid transparent;
+          position: absolute;
+          right: 32px;
+          top: calc(50% - 4px);
+          transition: all 300ms ease;        
+        }
+    }
+    &.short span::before {
+      width: 24px;
+      right: 28px;
+    }
+    &.short span::after {      
+      right: 26px;
+    }
+    &:hover span::before {      
+      width: 64px;
+      right: 26px; 
+    }
+    &:hover span::after {      
+      right: 22px;
+    }
+    &.short:hover span::before {      
+      width: 34px;
+      right: 18px; 
+    }
+    &.short:hover span::after {      
+      right: 16px;
+    }
+}
+.dark-button {
+  width: 316px;
+  height: 62px;
+  display: block;
+  background-color: transparent;
+  border: 1px solid $darkBorder;
+  font-family: Hind;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $h3Color;
+  position: relative;  
+  transition: all 300ms ease;
+    &.short {
+      width: 200px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      transition: all 300ms ease;
+      background-color: $buttonHover;
+    }
+    &:hover {
+      color: #fff;
+      border-color: $buttonHover;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+    & span {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;      
+      padding-left: 32px;  
+      z-index: 1;
+      position: relative;
+        &::before {
+          content: "";
+          display: block;
+          height: 1px;
+          width: 54px;
+          background-color: $h3Color;
+          position: absolute;
+          right: 36px;
+          top: calc(50% - 1px);
+          transition: all 300ms ease;        
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 3.5px solid transparent;
+          border-left: 4px solid $h3Color;
+          border-bottom: 3.5px solid transparent;
+          position: absolute;
+          right: 32px;
+          top: calc(50% - 4px);
+          transition: all 300ms ease;        
+        }
+    }
+    &.short span::before {
+      width: 24px;
+      right: 28px;
+    }
+    &.short span::after {      
+      right: 26px;
+    }
+    &:hover span::before {
+      background-color: #fff;
+      width: 64px;
+      right: 26px; 
+    }
+    &:hover span::after {
+      border-left-color: #fff;
+      right: 22px;
+    }
+    &.short:hover span::before {      
+      width: 34px;
+      right: 18px; 
+    }
+    &.short:hover span::after {      
+      right: 16px;
+    }
+}
+
+.g__orage-title {  
+  font-family: LucidaGrande;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  color: $orange;
+}
+.g__black-title {
+  margin-top: 6px;
+  font-family: Helvetica;
+  font-size: 52px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.08;
+  letter-spacing: normal;
+  color: $h3Color;
+}
+.g__block-description {
+  margin-top: 40px;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  color: $descriptionColor;
+}
