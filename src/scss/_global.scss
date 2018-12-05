@@ -348,3 +348,34 @@ textarea:-moz-placeholder { /* Firefox 18- */
   letter-spacing: normal;
   color: $descriptionColor;
 }
+
+.slider__navigation {
+  font-family: LucidaGrande;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $orange;
+}
+
+
+/* ==========================================================================
+   Air datepicker
+   ========================================================================== */
+.datepicker {
+  border-color: #c7c7c7;
+  .datepicker--day-name {
+    color: $orange;
+  }
+  .datepicker--cell.-current- {
+    color: $orange;
+    &.datepicker--cell.-selected- {
+      color: #fff;
+    }
+  }
+  .datepicker--cell.-selected- {
+    background-color: $orange;
+  }
+}
