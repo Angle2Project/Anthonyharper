@@ -1,175 +1,203 @@
-<% var data = {
-  title: "Anthony Harper",
-  name: "about",
-}; %>
-<%= _.template(require('./../includes/header.html'))(data) %>
+<% var data = { title: "Anthony Harper", name: "about", }; %> <%=
+_.template(require('./../includes/header.html'))(data) %>
 
-    <article class="about__head">
-      <div class="wrapper">
-        <section class="about__head_title">
-          <h2 class="g__orage-title">Lorem ipsum</h2>
-          <h3 class="g__black-title">About us</h3>
-          <div class="g__block-description">Many people has the notion that enlightenment is one state. Many also believe that when it is attained, a person is forever in that state.</div>          
-        </section>
+<article class="about__head">
+  <div class="wrapper">
+    <section class="about__head_title">
+      <h2 class="g__orage-title wow fadeInUp" data-wow-delay="0.3s">
+        Lorem ipsum
+      </h2>
+      <h3 class="g__black-title wow fadeInUp" data-wow-delay="0.6s">
+        About us
+      </h3>
+      <div class="g__block-description wow fadeInUp" data-wow-delay="0.9s">
+        Many people has the notion that enlightenment is one state. Many also
+        believe that when it is attained, a person is forever in that state.
       </div>
-    </article>
-    <!-- /.about__head -->
+    </section>
+  </div>
+</article>
+<!-- /.about__head -->
 
-    <article class="about__vision">
-      <div class="wrapper">
-        <div class="about__vision_info">
-          <h2 class="g__orage-title">Lorem ipsum</h2>
-          <h3 class="g__black-title">Our vision</h3>
-          <div class="g__block-description">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
-          <div class="info--buttons">
-            <a href="" class="orange-button short">
-              <span>Portfolio</span>
-            </a>
-            <a href="" class="dark-button short">
-              <span>Start a Project</span>
-            </a>
-          </div>
-        </div>
-        <div class="about__vision_photo">
-          <div class="photo--left">
-            <img src="./img/about-us-vision-1.jpg" alt="">
-          </div>
-          <div class="photo--right">
-            <img src="./img/about-us-vision-2.jpg" alt="">
-            <img src="./img/about-us-vision-3.jpg" alt="">
-          </div>
-        </div>
+<article class="about__vision">
+  <div class="wrapper">
+    <div class="about__vision_info">
+      <h2
+        class="g__orage-title wow fadeInUp"
+        data-wow-delay="0.85s"
+        data-wow-duration="1.1s"
+      >
+        Lorem ipsum
+      </h2>
+      <h3
+        class="g__black-title  wow fadeInUp"
+        data-wow-delay="0.85s"
+        data-wow-duration="1.1s"
+      >
+        Our vision
+      </h3>
+      <div
+        class="g__block-description wow fadeInUp"
+        data-wow-delay="1s"
+        data-wow-duration="0.9s"
+      >
+        Separated they live in Bookmarksgrove right at the coast of the
+        Semantics, a large language ocean.
       </div>
-    </article>
-    <!-- /.about__vision -->
-
-
-    <article class="about__difference">
-      <div class="wrapper">
-        <h2 class="g__orage-title">About us</h2>
-        <h3 class="g__black-title">Our difference</h3>
-        <div class="g__block-description">There are many kinds of narratives and organizing principles. Science is driven by evidence.</div>
-        <section class="about__difference_tile">
-          <div class="tile--photo">
-            <img src="./img/about-difference-1.jpg" alt="">
-          </div>
-          <div class="tile--info">
-            <b>On her way she met a copy.</b>
-            <span>A small river named Duden flows by their place and supplies it with the necessary regelialia.</span>
-          </div>
-        </section>
-        <section class="about__difference_tile">          
-          <div class="tile--info">
-            <b>Longe and Parole</b>
-            <span>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span>
-          </div>
-          <div class="tile--photo">
-            <img src="./img/about-difference-2.jpg" alt="">
-          </div>
-        </section>
+      <div
+        class="info--buttons wow fadeInUp"
+        data-wow-delay="1.15s"
+        data-wow-duration="0.7s"
+      >
+        <a href="" class="orange-button short"> <span>Portfolio</span> </a>
+        <a href="" class="dark-button short"> <span>Start a Project</span> </a>
       </div>
-    </article>
-    <!-- /.about__difference -->
-
-    <article class="about__team">
-      <div class="wrapper">
-        <h2 class="g__orage-title">About us</h2>
-        <h3 class="g__black-title">Our team</h3>
-        <div class="g__block-description">There are many kinds of narratives and organizing principles. Science is driven by evidence.</div>
-        <section class="about__team_filters">
-          <h4>Sort by:</h4>
-          <ul class="filters--list">
-            <li class="current">
-              <a href="">
-                <span>By Headquarte</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>By Seniority</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>By Name</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>By Team</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <ul class="about__team_list">
-          <li>            
-              <img src="./img/about-us-team-1.jpg" alt="">
-              <b>Melvin Flowers</b>            
-              <span>Senior lawyer</span>
-          </li>
-          <li>
-              <img src="./img/about-us-team-2.jpg" alt="">
-              <b>Dora Webster</b>            
-              <span>Manager</span>
-          </li>
-          <li>
-              <img src="./img/about-us-team-3.jpg" alt="">
-              <b>Derek Walsh</b>            
-              <span>Lawyer</span>
-          </li>
-          <li>
-              <img src="./img/about-us-team-4.jpg" alt="">
-              <b>Elizabeth Perkins</b>            
-              <span>Senior lawyer</span>
-          </li>
-          <li>
-              <img src="./img/about-us-team-5.jpg" alt="">
-              <b>Arthur Curtis</b>            
-              <span>Manager</span>
-          </li>
-          <li>
-              <img src="./img/about-us-team-6.jpg" alt="">
-              <b>Ricardo Cannon</b>            
-              <span>Lawyer</span>
-          </li>
-          <li>
-              <img src="./img/about-us-team-7.jpg" alt="">
-              <b>Douglas Santiago</b>            
-              <span>Senior lawyer</span>
-          </li>
-          <li>
-              <img src="./img/about-us-team-8.jpg" alt="">
-              <b>Bobby Hunter</b>            
-              <span>Manager</span>
-          </li>
-          <li>
-              <img src="./img/about-us-team-9.jpg" alt="">
-              <b>Mattie Jordan</b>            
-              <span>Lawyer</span>
-          </li>
-        </ul>
+    </div>
+    <div class="about__vision_photo mask-wrap">
+      <div class="mask wow revealInRight" data-wow-duration="1.15s"></div>
+      <div class="photo--left">
+        <img src="./img/about-us-vision-1.jpg" alt="" />
       </div>
-    </article>
-    <!-- /.about__team -->
-
-    <article class="about__getin">
-      <div class="wrapper">
-        <h2 class="g__orage-title">About us</h2>
-        <h3 class="g__black-title">Get in touch with our team now</h3>
-        <div class="g__block-description">There are many kinds of narratives and organizing principles. Science is driven by evidence.</div>
-        <section class="about__getin_buttons">
-          <a href="" class="orange-button short">
-            <span>Portfolio</span>
-          </a>
-          <a href="" class="dark-button short">
-            <span>Start a Project</span>
-          </a>
-        </section>
+      <div class="photo--right">
+        <img src="./img/about-us-vision-2.jpg" alt="" />
+        <img src="./img/about-us-vision-3.jpg" alt="" />
       </div>
-    </article>
-    <!-- /.about__getin -->
+    </div>
+  </div>
+</article>
+<!-- /.about__vision -->
 
-    
+<article class="about__difference">
+  <div class="wrapper">
+    <h2 class="g__orage-title wow fadeInUp">About us</h2>
+    <h3 class="g__black-title wow fadeInUp" data-wow-delay="0.3s">
+      Our difference
+    </h3>
+    <div class="g__block-description wow fadeInUp" data-wow-delay="0.6s">
+      There are many kinds of narratives and organizing principles. Science is
+      driven by evidence.
+    </div>
+    <section class="about__difference_tile">
+      <div class="tile--photo mask-wrap">
+        <div class="mask wow revealInLeft" data-wow-duration="1.15s"></div>
+        <img src="./img/about-difference-1.jpg" alt="" />
+      </div>
+      <div
+        class="tile--info wow fadeInUp"
+        data-wow-delay="0.85s"
+        data-wow-duration="1.1s"
+      >
+        <b>On her way she met a copy.</b>
+        <span
+          >A small river named Duden flows by their place and supplies it with
+          the necessary regelialia.</span
+        >
+      </div>
+    </section>
+    <section class="about__difference_tile">
+      <div
+        class="tile--info wow fadeInUp"
+        data-wow-delay="0.85s"
+        data-wow-duration="1.1s"
+      >
+        <b>Longe and Parole</b>
+        <span
+          >Separated they live in Bookmarksgrove right at the coast of the
+          Semantics, a large language ocean.</span
+        >
+      </div>
+      <div class="tile--photo mask-wrap">
+        <div class="mask wow revealInRight" data-wow-duration="1.15s"></div>
+        <img src="./img/about-difference-2.jpg" alt="" />
+      </div>
+    </section>
+  </div>
+</article>
+<!-- /.about__difference -->
 
+<article class="about__team">
+  <div class="wrapper">
+    <h2 class="g__orage-title wow fadeInUp">About us</h2>
+    <h3 class="g__black-title wow fadeInUp" data-wow-delay="0.3s">Our team</h3>
+    <div class="g__block-description wow fadeInUp" data-wow-delay="0.6s">
+      There are many kinds of narratives and organizing principles. Science is
+      driven by evidence.
+    </div>
+    <section class="about__team_filters wow fadeInUp" data-wow-delay="0.9s">
+      <h4>Sort by:</h4>
+      <ul class="filters--list">
+        <li class="current">
+          <a href=""> <span>By Headquarte</span> </a>
+        </li>
+        <li>
+          <a href=""> <span>By Seniority</span> </a>
+        </li>
+        <li>
+          <a href=""> <span>By Name</span> </a>
+        </li>
+        <li>
+          <a href=""> <span>By Team</span> </a>
+        </li>
+      </ul>
+    </section>
+    <ul class="about__team_list">
+      <li class="wow fadeInUp">
+        <img src="./img/about-us-team-1.jpg" alt="" /> <b>Melvin Flowers</b>
+        <span>Senior lawyer</span>
+      </li>
+      <li class="wow fadeInUp" data-wow-delay="0.3s">
+        <img src="./img/about-us-team-2.jpg" alt="" /> <b>Dora Webster</b>
+        <span>Manager</span>
+      </li>
+      <li class="wow fadeInUp" data-wow-delay="0.6s">
+        <img src="./img/about-us-team-3.jpg" alt="" /> <b>Derek Walsh</b>
+        <span>Lawyer</span>
+      </li>
+      <li class="wow fadeInUp">
+        <img src="./img/about-us-team-4.jpg" alt="" /> <b>Elizabeth Perkins</b>
+        <span>Senior lawyer</span>
+      </li>
+      <li class="wow fadeInUp" data-wow-delay="0.3s">
+        <img src="./img/about-us-team-5.jpg" alt="" /> <b>Arthur Curtis</b>
+        <span>Manager</span>
+      </li>
+      <li class="wow fadeInUp" data-wow-delay="0.6s">
+        <img src="./img/about-us-team-6.jpg" alt="" /> <b>Ricardo Cannon</b>
+        <span>Lawyer</span>
+      </li>
+      <li class="wow fadeInUp">
+        <img src="./img/about-us-team-7.jpg" alt="" /> <b>Douglas Santiago</b>
+        <span>Senior lawyer</span>
+      </li>
+      <li class="wow fadeInUp" data-wow-delay="0.3s">
+        <img src="./img/about-us-team-8.jpg" alt="" /> <b>Bobby Hunter</b>
+        <span>Manager</span>
+      </li>
+      <li class="wow fadeInUp" data-wow-delay="0.6s">
+        <img src="./img/about-us-team-9.jpg" alt="" /> <b>Mattie Jordan</b>
+        <span>Lawyer</span>
+      </li>
+    </ul>
+  </div>
+</article>
+<!-- /.about__team -->
 
-  <%= _.template(require('./../includes/footer.html'))(data) %>
+<article class="about__getin">
+  <div class="wrapper">
+    <h2 class="g__orage-title wow fadeInUp">About us</h2>
+    <h3 class="g__black-title wow fadeInUp" data-wow-delay="0.3s">
+      Get in touch with our team now
+    </h3>
+    <div class="g__block-description wow fadeInUp" data-wow-delay="0.6s">
+      There are many kinds of narratives and organizing principles. Science is
+      driven by evidence.
+    </div>
+    <section class="about__getin_buttons wow fadeInUp" data-wow-delay="0.9s">
+      <a href="" class="orange-button short"> <span>Portfolio</span> </a>
+      <a href="" class="dark-button short"> <span>Start a Project</span> </a>
+    </section>
+  </div>
+</article>
+<!-- /.about__getin -->
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
