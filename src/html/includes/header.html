@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title><%=title%></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -20,7 +20,7 @@
 </head>
 
 <body class="<%=name%>">
-	<div id="main-scroll">
+	<!-- <div id="main-scroll"> -->
 	  <header>
 	    <div class="wrapper">
 	      <div class="header__logo">
@@ -44,10 +44,14 @@
 	        <li class="<% if (name == "careers") { %>current<% } %>">
 	          <a href="careers.html">Careers</a>
 	        </li>
+	        <li class="linkedin">
+	        	<a href=""></a>
+	        </li>
 	      </ul>
 	      <div class="header__tocontacts">
 	        <a href="contact-us.html" data-text="Contact Us"></a>
 	      </div>
+	      <div class="header__nav_button"></div>
 	    </div>
 	  </header>
 	  <!-- /header -->

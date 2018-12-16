@@ -24,16 +24,50 @@ export default function home() {
       //spaceBetween: 1
     });	
 
+    if($(window).width() < 480){
+      var specialtiesList = new Swiper('.home__specialties_list', {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        spaceBetween: 8,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        }
+      });  
+    }
+    $(window).resize(function(){      
+      if($(window).width() > 480){
+        if(specialtiesList){
+          specialtiesList.destroy();
+          specialtiesList = null;
+        }        
+      }else{
+        if(!specialtiesList){
+          specialtiesList = new Swiper('.home__specialties_list', {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            spaceBetween: 8,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            }
+          });  
+        }
+      }
+    });
+  
+
     var GoogleMapsLoader = require('google-maps'); // only for common js environments
     GoogleMapsLoader.KEY = 'AIzaSyCTLKxdfN261yLSnwttv5tfc7Vzzjz7BVQ';
      
     GoogleMapsLoader.load(function(google) {        
-      // var center = (page == 'home' ? {lat: -40.971740, lng: 180.760507} : {lat: -40.971740, lng: 174.760507})
+      //var center = (page == 'home' ? {lat: -40.971740, lng: 180.760507} : {lat: -40.971740, lng: 174.760507})
+      var center = ($(window).width() > 480 ? {lat: -40.971740, lng: 180.760507} : {lat: -39.971740, lng: 173.760507});
 
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 6,
-          scrollwheel: false,
-        center: {lat: -40.971740, lng: 180.760507},
+        scrollwheel: false,
+        center: center,
         mapTypeControl: false,
         scaleControl: false,
         streetViewControl: false,
