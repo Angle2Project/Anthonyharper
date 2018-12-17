@@ -790,6 +790,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: auto;
+        margin: 20px 0 0 0;
         li {
           border: 1px solid rgba(244, 225, 212, 0.5);
           width: calc(50% - 3px);
@@ -853,6 +855,8 @@
           }
           .slide--info {
             padding-top: 0;
+            width: auto;
+            margin: 0;
             .g__orage-title {
               padding: 0 24px;
             }
@@ -889,15 +893,20 @@
           display: none; 
         }
         .head--filters-body {
-          margin-top: 17px;
+          margin-top: 17px!important;
+          justify-content: space-between;
           .select {
-            width: calc(45% - 8px);
+            width: calc(48% - 8px);
+            margin-right: 0;
             select {
               width: 100%;
+              padding-left: 18px;
             }
           }
           input {
-            width: 55%;
+            width: 52%;
+            padding-left: 18px;
+            background-position: center right 10px;
           }
         }
         .thinking__blogs_list {
