@@ -808,4 +808,348 @@
         }
       }
    }
+   /* ==========================================================================
+   Our Thinking
+   ========================================================================== */
+   .thinking {
+    .thinking__head {
+      height: 312px;
+      .thinking__head_title {
+        width: 277px;
+        bottom: -24px;
+        padding: 38px 24px 47px 24px;
+        .g__orage-title {
+          line-height: 2.43;
+        }
+        .g__black-title {
+          line-height: 1.5;        
+        }
+        .g__block-description {
+          margin-top: 8px;
+          line-height: 1.86;
+        }
+      }
+    }
+   }
+   .thinking__slider {
+      margin-top: 71px;
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        .home__main-slider_navigation {
+          position: static;
+          transform: translateX(0);
+          padding: 0 24px;
+        }
+        .thinking__slider_slide {
+          flex-direction: column;
+          .slide--photo {
+            display: none;
+          }
+          .slide--photo-mobile {
+            display: block;
+            width: 253px;
+            margin-top: 37px;
+          }
+          .slide--info {
+            padding-top: 0;
+            .g__orage-title {
+              padding: 0 24px;
+            }
+            .g__black-title {
+              padding: 0 24px;
+              margin-top: 3px;
+            }
+            .g__block-description {
+              padding: 0 24px;
+              margin-top: 49px;
+              width: auto;
+            }
+            .slide--info-more {
+              padding: 0 24px;
+              margin-top: 35px;
+            }
+          }
+        }
+      }
+   }
+   .thinking__blogs {
+      margin-top: 49px;
+      margin-bottom: 44px;
+      .wrapper {
+        padding: 0 24px;
+        .thinking__blogs_head {
+          flex-direction: column;
+          align-items: flex-start;
+          .g__black-title {
+            margin-top: 3px;
+          }
+        }
+        .head--filters-title {
+          display: none; 
+        }
+        .head--filters-body {
+          margin-top: 17px;
+          .select {
+            width: calc(45% - 8px);
+            select {
+              width: 100%;
+            }
+          }
+          input {
+            width: 55%;
+          }
+        }
+        .thinking__blogs_list {
+          margin-top: 44px;
+          .list--item {
+            margin-bottom: 16px;
+            width: 100%;
+            height: 261px;
+            padding: 32px 19px 32px 42px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            h4 {
+              font-family: LucidaGrande;
+              font-size: 22px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.55;
+              letter-spacing: normal;
+              margin-top: 23px;
+            }
+            .list--description {
+              display: none;
+            }
+            .list--more {
+              margin-top: 14px;
+            }
+          }
+        }
+        .thinking__blogs_more {
+          margin-top: 44px;
+        }
+      }
+   }
+  /* ==========================================================================
+   Careers
+   ========================================================================== */
+  .careers {
+    .careers__join {
+      .careers__join_photo {
+        display: none;
+      }
+      .careers__join_info {
+        margin-top: 0;
+        .careers__join_photo--mobile {
+          display: block;
+          width: 255px;
+          margin-top: 35px;
+          img {
+            width: 100%;
+          }
+        }
+        .g__orage-title {
+          padding: 0 24px;
+        }
+        .g__black-title {
+          padding: 0 24px;
+        }
+        .g__block-description {
+          margin-top: 49px;
+          padding: 0 24px;
+        }
+        .careers__join_more {
+          padding: 0 24px;
+        }
+      }
+    }
+    .careers__company {
+      margin-top: 45px;
+      .wrapper {
+        padding: 0;
+        flex-direction: column;
+        .careers__company_left {
+          padding: 0 24px;
+          width: auto;
+          .careers__company_orange-title {
+            font-family: LucidaGrande;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2.43;
+            letter-spacing: normal;
+          }
+          .careers__company_black-title {
+            margin-top: 3px;
+            font-family: Helvetica;
+            font-size: 24px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+          }
+          .careers__company_description {
+            margin-top: 21px;
+            font-family: Helvetica;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.86;
+            letter-spacing: normal;
+          }
+        }
+        .careers__company_right {
+          margin-top: 35px;
+          align-self: flex-end;
+          .careers__company_photo-1 {
+            width: 215px;
+            height: auto;
+          }
+          .careers__company_photo-2 {
+            width: 70px;
+            height: auto;            
+            margin-left: 11px;
+          }
+        }
+      }
+    }
+    .careers__team {
+      margin-top: 50px;
+      .wrapper {
+        flex-direction: column;
+        padding: 0;
+        .careers__team_left {
+          order: 2;
+          margin-top: 50px;
+          align-self: flex-start;
+          .careers__team_photo-1 {
+            width: 215px;
+          }
+          .careers__team_photo-2 {
+            width: 70px;
+          }
+        }
+        .careers__team_right {
+          order: 1;
+          width: auto;
+          padding: 0 24px;
+          .careers__company_orange-title {
+            font-family: LucidaGrande;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2.43;
+            letter-spacing: normal;
+          }
+          .careers__company_black-title {
+            margin-top: 3px;
+            font-family: Helvetica;
+            font-size: 24px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+          }
+          .careers__company_description {
+            margin-top: 21px;
+            font-family: Helvetica;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.86;
+            letter-spacing: normal;
+          }
+        }
+      }
+    }
+    .careers__current {
+      margin-top: 63px;
+      .wrapper {
+        padding: 0 24px;
+        .careers__current_orange-title {
+          margin-top: 47px;
+          font-family: LucidaGrande;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 2.43;
+          letter-spacing: normal;
+          text-align: center;
+        }
+        .careers__current_black-title {
+          margin-top: 0;
+          font-family: Helvetica;
+          font-size: 24px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: center;
+        }
+        .careers__current_description {
+          margin-top: 11px;
+          width: auto;
+          font-family: Helvetica;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.86;
+          letter-spacing: normal;
+          text-align: center;
+        }
+        .careers__current_list {
+          margin-top: 51px;
+          width: auto;
+          margin-bottom: 85px;
+          li {
+            flex-direction: column;
+            padding: 29px 42px 36px 42px;
+            .li--body {
+              width: auto;
+              .li--description {
+                margin-top: 13px;
+                font-family: Helvetica;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.86;
+                letter-spacing: normal;
+              }
+            }
+            .li--more {
+              margin-top: 8px;
+              display: block;
+              width: 100%;
+              .orange-button {
+                width: 100%;
+                span::before {
+                  width: 35px;
+                }
+                &:hover span::before {
+                  width: 45px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+   
 }

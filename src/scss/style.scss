@@ -1121,6 +1121,9 @@ header .wrapper {
         width: 100%;
       }
     }
+    .careers__join_photo--mobile {
+      display: none;
+    }
     .careers__join_info {
       margin-top: 135px;
       width: 450px;
@@ -1847,6 +1850,12 @@ header .wrapper {
   }
   .slide--photo {
     width: 773px;
+    img {
+      width: 100%;
+    }
+  }
+  .slide--photo-mobile {
+    display: none;
     img {
       width: 100%;
     }
