@@ -1,6 +1,12 @@
 import Swiper from 'swiper';
 import $ from 'jquery';
-export default function home() {
+import IMask from 'imask';
+export default function home() {  
+  console.log(document.getElementById('form-phone'))
+  var phoneMask = new IMask(
+  document.getElementById('form-phone'), {
+    mask: '(00)000 0000'
+  });
 
   // Swiper init  
   var homeTopSwiper = new Swiper('.home__main-slider .swiper-container', {
