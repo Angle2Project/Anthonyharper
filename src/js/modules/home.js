@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import $ from 'jquery';
+//import $ from 'jquery';
 import IMask from 'imask';
 export default function home() {  
   console.log(document.getElementById('form-phone'))
@@ -11,11 +11,11 @@ export default function home() {
   // Swiper init  
   var homeTopSwiper = new Swiper('.home__main-slider .swiper-container', {
       navigation: {
-        nextEl: '.home__main-slider_navigation--arrows .arrow-next',
-        prevEl: '.home__main-slider_navigation--arrows .arrow-prev',
+        nextEl: '#home-top-slider .home__main-slider_navigation--arrows .arrow-next',
+        prevEl: '#home-top-slider .home__main-slider_navigation--arrows .arrow-prev',
       },      
       pagination: {
-        el: '.home__main-slider_navigation--pagination',
+        el: '#home-top-slider .home__main-slider_navigation--pagination',
         type : 'fraction',
         formatFractionCurrent : function(current){
           return current < 10 ? '0'+current : current;
@@ -29,9 +29,30 @@ export default function home() {
       //watchOverflow : true
       //spaceBetween: 1
     });	
-
-    if($(window).width() < 480){
-      var specialtiesList = new Swiper('.home__specialties_list', {
+    let specialtiesList;
+    let specialtiesListType;
+    if($(window).width() > 480){
+      specialtiesListType = 'desktop';
+      specialtiesList = new Swiper('#home-specialties-slider', {
+        slidesPerView: 4,
+        navigation: {
+          nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
+          prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',
+        },
+        pagination: {
+          el: '#home-specialties-slider .home__main-slider_navigation--pagination',
+          type : 'fraction',
+          formatFractionCurrent : function(current){
+            return current < 10 ? '0'+current : current;
+          },
+          formatFractionTotal : function(total){
+            return total < 10 ? '0' + total : total;
+          }
+        }
+      });  
+    }else{
+      specialtiesListType = 'mobile';
+      specialtiesList = new Swiper('.home__specialties_list', {
         slidesPerView: 2,
         slidesPerColumn: 2,
         spaceBetween: 8,
@@ -39,16 +60,37 @@ export default function home() {
           el: '.swiper-pagination',
           clickable: true,
         }
-      });  
+      }); 
     }
-    $(window).resize(function(){      
+    $(window).resize(function(){
       if($(window).width() > 480){
-        if(specialtiesList){
+        if(specialtiesListType == 'mobile'){
           specialtiesList.destroy();
           specialtiesList = null;
-        }        
+          specialtiesListType = 'desktop';
+          specialtiesList = new Swiper('#home-specialties-slider', {
+            slidesPerView: 4,
+            navigation: {
+              nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
+              prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',
+            },
+            pagination: {
+              el: '#home-specialties-slider .home__main-slider_navigation--pagination',
+              type : 'fraction',
+              formatFractionCurrent : function(current){
+                return current < 10 ? '0'+current : current;
+              },
+              formatFractionTotal : function(total){
+                return total < 10 ? '0' + total : total;
+              }
+            }
+          });
+        }
       }else{
-        if(!specialtiesList){
+        if(specialtiesListType == 'desktop'){
+          specialtiesList.destroy();
+          specialtiesList = null;
+          specialtiesListType = 'mobile';
           specialtiesList = new Swiper('.home__specialties_list', {
             slidesPerView: 2,
             slidesPerColumn: 2,
@@ -57,10 +99,42 @@ export default function home() {
               el: '.swiper-pagination',
               clickable: true,
             }
-          });  
+          }); 
         }
       }
-    });
+    });    
+    // if($(window).width() < 480){
+    //   specialtiesList = new Swiper('.home__specialties_list', {
+    //     slidesPerView: 2,
+    //     slidesPerColumn: 2,
+    //     spaceBetween: 8,
+    //     pagination: {
+    //       el: '.swiper-pagination',
+    //       clickable: true,
+    //     }
+    //   });  
+    // }
+    
+    // $(window).resize(function(){      
+    //   if($(window).width() > 480){
+    //     if(specialtiesList){
+    //       specialtiesList.destroy();
+    //       specialtiesList = null;
+    //     }        
+    //   }else{
+    //     if(!specialtiesList){
+    //       specialtiesList = new Swiper('.home__specialties_list', {
+    //         slidesPerView: 2,
+    //         slidesPerColumn: 2,
+    //         spaceBetween: 8,
+    //         pagination: {
+    //           el: '.swiper-pagination',
+    //           clickable: true,
+    //         }
+    //       });  
+    //     }
+    //   }
+    // });
   
 
     var GoogleMapsLoader = require('google-maps'); // only for common js environments

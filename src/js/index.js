@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import Scrollbar from 'smooth-scrollbar'
+//import Scrollbar from 'smooth-scrollbar'
 // import WOW from 'wowjs'
 import home from './modules/home'
 import specialities from './modules/specialities'

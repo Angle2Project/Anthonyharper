@@ -20,6 +20,9 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1640px) {
+    padding: 0 40px 0 46px;
+  }
 }
 .header__logo {
   width: 170px;
@@ -161,7 +164,10 @@ header .wrapper {
 .home__main-slider {
   padding-top: 25px;
   background-color: #e6e5d8;
-  height: 790px;
+  // height: 790px;
+  @media screen and (max-width: 1640px) {
+    height: auto;
+  }
 }
 .home__main-slider_slide {
   display: flex;
@@ -264,6 +270,9 @@ header .wrapper {
   flex-grow: 1;
   text-align: right;
   background-color: #e6e5d8;
+  @media screen and (max-width: 1640px) {
+    
+  }  
 }
 
 .home__main-slider_slide .slide--right .video {
@@ -271,6 +280,11 @@ header .wrapper {
   height: 905px;
   margin-left: auto;
   position: relative;
+  margin-bottom: -140px;
+  @media screen and (max-width: 1640px) {
+    width: auto;
+    height: auto;    
+  }
 }
 .home__main-slider_slide .slide--right .video::before {
   content: '';
@@ -287,7 +301,7 @@ header .wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 150ms ease;
+  transition: all 150ms ease;  
 }
 .home__main-slider_slide .slide--right .video::after {
   content: '';
@@ -473,8 +487,8 @@ header .wrapper {
 }
 .specialities .home__specialties_list {
   width: 1380px;
-  margin: 80px auto 0 auto;
-  padding: 0;
+  margin: 0 auto;
+  padding: 120px 0 0 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -490,13 +504,19 @@ header .wrapper {
 }
 .home__specialties_list {
   width: 1380px;
-  margin: 80px auto 0 auto;
-  padding: 0;    
+  margin: 0 auto;
+  padding: 120px 0 0 0;  
   .swiper-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
   }
+}
+.swiper-pagination {
+  display: none;
+}
+.home__main-slider_navigation {
+  top: 25px;
 }
 .home__specialties_list .home__specialties_list--item {
   width: 330px;
@@ -508,7 +528,7 @@ header .wrapper {
   background-color: #f4e1d4;
 }
 .home__specialties_list .specialties--photo {
-  margin: 63px auto 0 auto;
+  margin: 90px auto 0 auto;
   width: 51px;
   height: 53px;
 }
@@ -528,10 +548,11 @@ header .wrapper {
   color: #4c5c4f;
   transition: all 300ms ease;
 }
-.home__specialties_list > li:hover .specialties--title {
-  color: #000000;
+.home__specialties_list .home__specialties_list--item:hover .specialties--title {
+  color: $orange;
 }
 .home__specialties_list .specialties--description {
+  display: none;
   margin-top: 6px;
   font-family: Helvetica;
   font-size: 18px;
@@ -771,14 +792,16 @@ header .wrapper {
 }
 .home__get-in-touch {
   margin-top: 191px;
-  margin-bottom: -410px;
+  margin-bottom: -600px;
+  position: relative;
+  z-index: 2;
 }
 .home__get-in-touch .wrapper {
   display: flex;
   justify-content: space-between;
 }
 .home__get-in-touch_title {
-  padding: 65px 55px 0 215px;
+  padding: 90px 55px 0 215px;
 }
 .home__get-in-touch_title span {
   font-family: Hind;
@@ -804,7 +827,7 @@ header .wrapper {
 }
 .home__get-in-touch_form {
   width: 760px;
-  padding: 82px 95px 83px 95px;
+  padding: 62px 75px 62px;
   background-color: #fdfbf3;
   position: relative;
   z-index: 1;
@@ -818,11 +841,11 @@ header .wrapper {
   line-height: 1.89;
   letter-spacing: normal;
   color: #979797;
-  margin-bottom: 38px;  
+  margin-bottom: 28px;  
 }
 .home__get-in-touch_form .form--input {
   min-width: 38px;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
   label {
     display: block;
     margin-bottom: 4px;
@@ -855,8 +878,8 @@ header .wrapper {
   }
 }
 .home__get-in-touch_form .form--input input {
-  width: 570px;
-  height: 72px;
+  width: 100%;
+  height: 62px;
   background-color: #ffffff;
   padding: 0 26px;
   font-family: Hind;
@@ -913,7 +936,7 @@ header .wrapper {
 }
 .home__get-in-touch_form .form--textarea textarea {
   width: 100%;
-  height: 246px;
+  height: 146px;
   padding: 24px 26px;
   font-family: Hind;
   font-size: 18px;
@@ -924,6 +947,7 @@ header .wrapper {
   letter-spacing: normal;
   color: $orange;
   transition: all 300ms ease;
+  resize: none;
   outline: none;
   border: 1px solid transparent;
 }
@@ -1531,25 +1555,21 @@ header .wrapper {
       rgba(0, 0, 0, 0.02) 34%,
       #000000
     );
-  }
-  .wrapper {
-    height: 100%;
-    position: relative;
-    .about__head_title {
-      width: 935px;
-      background-color: #e6e5d8;
-      position: absolute;
-      left: 0;
-      bottom: -120px;
-      padding: 90px 215px;
-      .g__block-description {
-        color: $h3Color;
-      }
-    }
+  }  
+}
+.about__head_title {
+  width: 935px;
+  background-color: #e6e5d8;  
+  margin-top: -223px;
+  position: relative;
+  z-index: 1;
+  padding: 90px 215px;
+  .g__block-description {
+    color: $h3Color;
   }
 }
 .about__vision {
-  margin-top: 248px;
+  margin-top: 150px;
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -1840,25 +1860,21 @@ header .wrapper {
       rgba(0, 0, 0, 0.02) 34%,
       #000000
     );
-  }
-  .wrapper {
-    height: 100%;
-    position: relative;
-    .specialities__head_title {
-      width: 935px;
-      background-color: #e6e5d8;
-      position: absolute;
-      left: 0;
-      bottom: -120px;
-      padding: 90px 215px;
-      .g__block-description {
-        color: $h3Color;
-      }
-    }
+  }  
+}
+.specialities__head_title {
+  width: 935px;
+  background-color: #e6e5d8; 
+  position: relative;
+  z-index: 1;
+  margin-top: -223px;
+  padding: 90px 215px;
+  .g__block-description {
+    color: $h3Color;
   }
 }
 .specialities__slider {
-  margin-top: 270px;
+  margin-top: 150px;
 }
 .specialities__slider_slide {
   display: flex;
@@ -1903,25 +1919,21 @@ header .wrapper {
       rgba(0, 0, 0, 0.02) 34%,
       #000000
     );
-  }
-  .wrapper {
-    height: 100%;
-    position: relative;
-    .thinking__head_title {
-      width: 935px;
-      background-color: #e6e5d8;
-      position: absolute;
-      left: 0;
-      bottom: -120px;
-      padding: 90px 215px;
-      .g__block-description {
-        color: $h3Color;
-      }
-    }
+  }  
+}
+.thinking__head_title {
+  width: 935px;
+  background-color: #e6e5d8;
+  position: relative;
+  z-index: 1;
+  margin-top: -223px;
+  padding: 90px 215px;
+  .g__block-description {
+    color: $h3Color;
   }
 }
 .thinking__slider {
-  margin-top: 315px;
+  margin-top: 150px;
   .wrapper {
     position: relative;
   }

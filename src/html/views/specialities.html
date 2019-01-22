@@ -1,18 +1,15 @@
 <% var data = { title: "Anthony Harper", name: "specialities", }; %> <%=
 _.template(require('./../includes/header.html'))(data) %>
 
-<article class="specialities__head">
-  <div class="wrapper">
-    <section class="specialities__head_title">
-      <h2 class="g__orage-title wow fadeInUp">Lorem ipsum</h2>
-      <h3 class="g__black-title wow fadeInUp" data-wow-delay="0.3s">
-        Our specialities
-      </h3>
-      <div class="g__block-description wow fadeInUp" data-wow-delay="0.6s">
-        Many people has the notion that enlightenment is one state. Many also
-        believe that when it is attained, a person is forever in that state.
-      </div>
-    </section>
+<article class="specialities__head"></article>
+<article class="specialities__head_title">
+  <h2 class="g__orage-title wow fadeInUp">Lorem ipsum</h2>
+  <h3 class="g__black-title wow fadeInUp" data-wow-delay="0.3s">
+    Our specialities
+  </h3>
+  <div class="g__block-description wow fadeInUp" data-wow-delay="0.6s">
+    Many people has the notion that enlightenment is one state. Many also
+    believe that when it is attained, a person is forever in that state.
   </div>
 </article>
 <!-- /.specialities__head -->
@@ -80,92 +77,105 @@ _.template(require('./../includes/header.html'))(data) %>
       There are many kinds of narratives and organizing principles. Science is
       driven by evidence.
     </div>
-    <ul class="home__specialties_list">
-      <li class="wow fadeInUp">
-        <div class="specialties--photo">
-          <img src="./img/sport-car.svg" alt="" />
+    <div class="swiper-container home__specialties_list" id="home-specialties-slider">
+      <div class="swiper-wrapper">
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp">
+          <div class="specialties--photo">
+            <img src="./img/sport-car.svg" alt="" />
+          </div>
+          <div class="specialties--title">Automotive</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Automotive</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp" data-wow-delay="0.3s">
-        <div class="specialties--photo">
-          <img src="./img/bank.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0.3s">
+          <div class="specialties--photo">
+            <img src="./img/bank.svg" alt="" />
+          </div>
+          <div class="specialties--title">Banking & Finance</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Banking & Finance</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp" data-wow-delay="0.6s">
-        <div class="specialties--photo">
-          <img src="./img/crane.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0.6s">
+          <div class="specialties--photo">
+            <img src="./img/crane.svg" alt="" />
+          </div>
+          <div class="specialties--title">Construction</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Construction</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp" data-wow-delay="0.9s">
-        <div class="specialties--photo">
-          <img src="./img/skyline.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0.9s">
+          <div class="specialties--photo">
+            <img src="./img/skyline.svg" alt="" />
+          </div>
+          <div class="specialties--title">Corporate Advisory</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Corporate Advisory</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp">
-        <div class="specialties--photo">
-          <img src="./img/compass.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0s">
+          <div class="specialties--photo">
+            <img src="./img/compass.svg" alt="" />
+          </div>
+          <div class="specialties--title">Cross Border Investments</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Cross Border Investments</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp" data-wow-delay="0.3s">
-        <div class="specialties--photo">
-          <img src="./img/employee.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0.3s">
+          <div class="specialties--photo">
+            <img src="./img/employee.svg" alt="" />
+          </div>
+          <div class="specialties--title">Employment</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Employment</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp" data-wow-delay="0.6s">
-        <div class="specialties--photo">
-          <img src="./img/profits.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0.6s">
+          <div class="specialties--photo">
+            <img src="./img/profits.svg" alt="" />
+          </div>
+          <div class="specialties--title">Financial Services</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Financial Services</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp" data-wow-delay="0.9s">
-        <div class="specialties--photo">
-          <img src="./img/restaurant.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0.9s">
+          <div class="specialties--photo">
+            <img src="./img/restaurant.svg" alt="" />
+          </div>
+          <div class="specialties--title">Food & Beverage</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Food & Beverage</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp">
-        <div class="specialties--photo">
-          <img src="./img/receptionist.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0s">
+          <div class="specialties--photo">
+            <img src="./img/receptionist.svg" alt="" />
+          </div>
+          <div class="specialties--title">Hotels</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Hotels</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp" data-wow-delay="0.3s">
-        <div class="specialties--photo">
-          <img src="./img/refugee.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0.3s">
+          <div class="specialties--photo">
+            <img src="./img/refugee.svg" alt="" />
+          </div>
+          <div class="specialties--title">Immigration</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Immigration</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp" data-wow-delay="0.6s">
-        <div class="specialties--photo">
-          <img src="./img/credit-card.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0.6s">
+          <div class="specialties--photo">
+            <img src="./img/credit-card.svg" alt="" />
+          </div>
+          <div class="specialties--title">Insolvency & Corporate Recovery</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Insolvency & Corporate Recovery</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-      <li class="wow fadeInUp" data-wow-delay="0.9s">
-        <div class="specialties--photo">
-          <img src="./img/insurance.svg" alt="" />
+        <div class="home__specialties_list--item swiper-slide wow fadeInUp" data-wow-delay="0.9s">
+          <div class="specialties--photo">
+            <img src="./img/insurance.svg" alt="" />
+          </div>
+          <div class="specialties--title">Insurance</div>
+          <div class="specialties--description">Brief service description</div>
         </div>
-        <div class="specialties--title">Insurance</div>
-        <div class="specialties--description">Brief service description</div>
-      </li>
-    </ul>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <section class="home__main-slider_navigation wow fadeInUp" data-wow-delay="0.3s">
+        <div class="home__main-slider_navigation--pagination">
+          <b>01</b> <span>/05</span>
+        </div>
+        <div class="home__main-slider_navigation--arrows">
+          <div class="arrow-prev"></div>
+          <div class="arrow-next"></div>
+        </div>
+      </section>
+    </div>
   </div>
 </article>
 <!-- /.home__specialties -->
