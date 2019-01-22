@@ -20,8 +20,9 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (max-width: 1640px) {
-    padding: 0 40px 0 46px;
+  padding: 0 40px 0 46px;
+  @media screen and (max-width: 1600px) {
+    
   }
 }
 .header__logo {
@@ -165,7 +166,7 @@ header .wrapper {
   padding-top: 25px;
   background-color: #e6e5d8;
   // height: 790px;
-  @media screen and (max-width: 1640px) {
+  @media screen and (max-width: 1600px) {
     height: auto;
   }
 }
@@ -176,10 +177,15 @@ header .wrapper {
 }
 .home__main-slider_slide .slide--left {
   width: 695px;
-  padding: 218px 0px 153px 0px;
+  padding: 13.64vw 0 53px;  
+  width: 43.2%;
+  @media screen and (max-width: 1600px) {
+    //padding: 10vw 0 4vw;
+  }
 }
 .home__main-slider_slide .swiper-slide {
-  padding-left: 97px;
+  padding-left: 6.06vw;
+  padding-right: 2.5vw;
 }
 .home__main-slider_slide .orange-title {
   font-family: LucidaGrande;
@@ -202,6 +208,9 @@ header .wrapper {
   letter-spacing: normal;
   color: #000000;
   margin-bottom: 34px;
+  @media screen and (max-width: 1600px) {
+    font-size: 3vw;
+  }
 }
 .home__main-slider_slide .description {
   font-family: Hind;
@@ -270,20 +279,18 @@ header .wrapper {
   flex-grow: 1;
   text-align: right;
   background-color: #e6e5d8;
-  @media screen and (max-width: 1640px) {
+  width: 56.8vw;
+  @media screen and (max-width: 1600px) {
     
   }  
 }
 
-.home__main-slider_slide .slide--right .video {
-  width: 905px;
-  height: 905px;
+.home__main-slider_slide .slide--right .video {  
   margin-left: auto;
   position: relative;
-  margin-bottom: -140px;
-  @media screen and (max-width: 1640px) {
-    width: auto;
-    height: auto;    
+  margin-bottom: -120px;
+  @media screen and (max-width: 1600px) {
+    
   }
 }
 .home__main-slider_slide .slide--right .video::before {
@@ -306,12 +313,12 @@ header .wrapper {
 .home__main-slider_slide .slide--right .video::after {
   content: '';
   display: block;
-  width: 136px;
-  height: 136px;
+  width: 8.5vw;
+  height: 8.5vw;
   background: url('../img/video-play.svg') no-repeat center / cover;
   position: absolute;
-  top: calc(50% - 68px);
-  left: calc(50% - 68px);
+  top: calc(50% - 4.25vw);
+  left: calc(50% - 4.25vw);
   transition: all 250ms ease;
   cursor: pointer;
 }
@@ -338,6 +345,9 @@ header .wrapper {
   line-height: normal;
   letter-spacing: normal;
   color: $orange;
+  @media screen and (max-width: 1600px) {
+    left: 6.06vw;
+  }
 }
 .home__main-slider_navigation .swiper-pagination-current {
   font-family: Helvetica;
@@ -486,15 +496,15 @@ header .wrapper {
   color: #8f8f8f;
 }
 .specialities .home__specialties_list {
-  width: 1380px;
+  width: 86.25vw;
   margin: 0 auto;
   padding: 120px 0 0 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   li {
-    width: 330px;
-    height: 270px;
+    width: 20.6vw;
+    height: 16.8vw;
     margin-bottom: 30px;
     transition: all 300ms ease;  
     &:hover {
@@ -503,7 +513,7 @@ header .wrapper {
   }
 }
 .home__specialties_list {
-  width: 1380px;
+  width: 86.25vw;
   margin: 0 auto;
   padding: 120px 0 0 0;  
   .swiper-wrapper {
@@ -519,18 +529,22 @@ header .wrapper {
   top: 25px;
 }
 .home__specialties_list .home__specialties_list--item {
-  width: 330px;
-  height: 270px;
+  width: 20.6vw;
+  height: 16.8vw;
   margin-bottom: 30px;
   transition: all 300ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .home__specialties_list .home__specialties_list--item:hover {
   background-color: #f4e1d4;
 }
 .home__specialties_list .specialties--photo {
-  margin: 90px auto 0 auto;
-  width: 51px;
-  height: 53px;
+  margin: 0 auto;
+  width: 3.18vw;
+  height: 3.31vw;
 }
 .home__specialties_list .specialties--photo img {
   max-width: 100%;
@@ -968,9 +982,9 @@ header .wrapper {
     display: flex;
     .home__about_photo {
       display: flex;
-      margin-right: 150px;
+      margin-right: 9.375vw;
       .photo--left {
-        width: 185px;
+        width: 11.56vw;
         margin-right: 30px;
         img {
           width: 100%;
@@ -981,7 +995,7 @@ header .wrapper {
         }
       }
       .photo--right {
-        width: 570px;
+        width: 35.62vw;
         padding-top: 107px;
         img {
           width: 100%;
@@ -989,8 +1003,8 @@ header .wrapper {
       }
     }
     .home__about_info {
-      width: 450px;
-      padding-top: 214px;
+      width: 28.125vw;
+      align-self: center;
       .home__about_more {
         margin-top: 40px;
       }
