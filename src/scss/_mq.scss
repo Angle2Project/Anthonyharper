@@ -1,71 +1,11 @@
-@media screen and (max-width: 480px) {
-  /* ==========================================================================
-   Global
-   ========================================================================== */
-  .g__orage-title {    
-    font-size: 14px;
-    line-height: 2.43;    
-  }  
-  .g__black-title {
-    margin-top: 3px;
-    font-size: 24px;
-    line-height: 1.5;
-  }
-  .g__block-description {
-    margin-top: 21px;    
-    font-size: 14px;
-    line-height: 1.86;
-  }
-  .orange-button {
-    width: 229px;
-    height: 48px;
-    font-family: Helvetica;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-  .orange-button.short {
-    width: 229px;
-    span::before {
-      width: 35px;
-    }
-    &:hover span::before {
-      width: 45px;
-    }
-  }
-  .dark-button {
-    font-family: Helvetica;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-  .dark-button.short {
-    width: 229px;
-    height: 48px;
-    span::before {
-      width: 35px;
-    }
-    &:hover span::before {
-      width: 45px;
-    }
-  }
-  main {
-    padding-top: 106px;
-  }
-  .wrapper {
-    width: auto;
-    max-width: auto;
-  }
+@media screen and (max-width: 1200px) {
   /* ==========================================================================
    Header
    ========================================================================== */
-  header {
+   main {
+    padding-top: 106px;
+  }
+   header {
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -140,6 +80,88 @@
   .home .header__nav {
     background-color: #e6e5d8; 
   }
+  
+
+  /* ==========================================================================
+   Footer
+   ========================================================================== */
+
+  .footer__top {
+    padding-left: 6.6vw;
+    padding-right: 6.6vw;
+  }
+  .footer__bottom {
+    padding-left: 6.6vw;
+    padding-right: 6.6vw;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  /* ==========================================================================
+   Global
+   ========================================================================== */
+  .g__orage-title {    
+    font-size: 14px;
+    line-height: 2.43;    
+  }  
+  .g__black-title {
+    margin-top: 3px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .g__block-description {
+    margin-top: 21px;    
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  .orange-button {
+    width: 229px;
+    height: 48px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .orange-button.short {
+    width: 229px;
+    span::before {
+      width: 35px;
+    }
+    &:hover span::before {
+      width: 45px;
+    }
+  }
+  .dark-button {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .dark-button.short {
+    width: 229px;
+    height: 48px;
+    span::before {
+      width: 35px;
+    }
+    &:hover span::before {
+      width: 45px;
+    }
+  }
+  main {
+    padding-top: 106px;
+  }
+  .wrapper {
+    width: auto;
+    max-width: auto;
+  }
+  
   /* ==========================================================================
    Footer
    ========================================================================== */
@@ -237,12 +259,14 @@
     }
     .home__main-slider_slide .slide--right {
       padding: 13px 0 0 24px;
+      width: auto;
       .video {
         width: auto;
         height: auto;
         margin-left: auto;
         position: relative;
         bottom: -24px;
+        margin-bottom: 0;
         &::after {
           width: 86px;
           height: 86px;
@@ -302,7 +326,7 @@
       display: none;
     }
     .home__specialties_list--item {
-      height: auto;
+      height: 36vw;
       padding: 20px 0;
       margin-bottom: 10px;
     }    
@@ -375,7 +399,7 @@
       display: flex;
       justify-content: normal;
       width: auto;
-      flex-direction: column;
+      flex-direction: column;      
       .home__thinking_tile {        
         padding: 82px 20px 40px 42px;
         margin-bottom: 16px;
@@ -411,9 +435,18 @@
         .tile--photo {
           overflow: hidden;
           img {
-            width: auto;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+          }
+          &::before {
+            z-index: 1;
           }
         }
+      }
+      .thinking_body--left {
+        width: 100%;
       }
       .thinking_body--left .home__thinking_tile {
         width: auto;
@@ -649,8 +682,7 @@
           }
           .filters--list {
             overflow: hidden;
-            height: 0;
-            margin: 0;
+            max-height: 0;
           }          
         }
         .about__team_list {
@@ -777,6 +809,10 @@
             margin-top: 35px;
             img {
               width: 255px;
+              @media screen and (max-width: 1600px) {
+                width: 52.083vw;
+                min-width: 255px;
+              }
             }
           }
           .slide--photo {
@@ -791,29 +827,29 @@
       .home__specialties_orange-title {
         line-height: 2.43;        
       }
-      .home__specialties_list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: auto;
-        margin: 20px 0 0 0;
-        li {
-          border: 1px solid rgba(244, 225, 212, 0.5);
-          width: calc(50% - 3px);
-          height: 140px;
-          margin-bottom: 6px;
-          padding: 24px;
-          .specialties--title {
-            margin-top: 10px;
-            height: 28px;
-            font-size: 10px;
-          }
-          .specialties--description {
-            margin-top: 6px;
-            font-size: 10px;
-          }
-        }
-      }
+      // .home__specialties_list {
+      //   display: flex;
+      //   flex-wrap: wrap;
+      //   justify-content: space-between;
+      //   width: auto;
+      //   margin: 20px 0 0 0;
+      //   li {
+      //     border: 1px solid rgba(244, 225, 212, 0.5);
+      //     width: calc(50% - 3px);
+      //     height: 140px;
+      //     margin-bottom: 6px;
+      //     padding: 24px;
+      //     .specialties--title {
+      //       margin-top: 10px;
+      //       height: 28px;
+      //       font-size: 10px;
+      //     }
+      //     .specialties--description {
+      //       margin-top: 6px;
+      //       font-size: 10px;
+      //     }
+      //   }
+      // }
    }
    /* ==========================================================================
    Our Thinking

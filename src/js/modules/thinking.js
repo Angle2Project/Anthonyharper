@@ -4,6 +4,6 @@ export default function thinking() {
 	var position;	
 	$('#datepicker').datepicker({
 	    language: 'en',
-	    position : $(window).width() > 480 ? 'bottom left' : 'bottom right'
+	    position : $(window).width() > 900 ? 'bottom left' : 'bottom right'
 	  });  
 };

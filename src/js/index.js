@@ -5,6 +5,7 @@ import home from './modules/home'
 import specialities from './modules/specialities'
 import contacts from './modules/contacts'
 import thinking from './modules/thinking'
+import about from './modules/about'
 
 $(document).ready(() => {})
 var app = {
@@ -33,6 +34,9 @@ var app = {
         break
       case 'thinking':
         thinking()
+        break
+      case 'about':
+        about()
         break
       default:
         // statements_def

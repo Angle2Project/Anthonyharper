@@ -3,7 +3,7 @@ import $ from 'jquery';
 export default function home() {
   let specialtiesList;
     let specialtiesListType;
-    if($(window).width() > 480){
+    if($(window).width() > 900){
       specialtiesListType = 'desktop';
       specialtiesList = new Swiper('#home-specialties-slider', {
         slidesPerView: 4,
@@ -35,7 +35,7 @@ export default function home() {
       }); 
     }
     $(window).resize(function(){
-      if($(window).width() > 480){
+      if($(window).width() > 900){
         if(specialtiesListType == 'mobile'){
           specialtiesList.destroy();
           specialtiesList = null;

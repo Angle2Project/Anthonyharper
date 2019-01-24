@@ -31,7 +31,7 @@ export default function home() {
     });	
     let specialtiesList;
     let specialtiesListType;
-    if($(window).width() > 480){
+    if(window.innerWidth > 900){
       specialtiesListType = 'desktop';
       specialtiesList = new Swiper('#home-specialties-slider', {
         slidesPerView: 4,
@@ -62,8 +62,8 @@ export default function home() {
         }
       }); 
     }
-    $(window).resize(function(){
-      if($(window).width() > 480){
+    $(window).resize(function(){      
+      if(window.innerWidth > 900){
         if(specialtiesListType == 'mobile'){
           specialtiesList.destroy();
           specialtiesList = null;
@@ -142,7 +142,7 @@ export default function home() {
      
     GoogleMapsLoader.load(function(google) {        
       //var center = (page == 'home' ? {lat: -40.971740, lng: 180.760507} : {lat: -40.971740, lng: 174.760507})
-      var center = ($(window).width() > 480 ? {lat: -40.971740, lng: 180.760507} : {lat: -39.971740, lng: 173.760507});
+      var center = (window.innerWidth > 900 ? {lat: -40.971740, lng: 180.760507} : {lat: -39.971740, lng: 173.760507});
 
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 6,
