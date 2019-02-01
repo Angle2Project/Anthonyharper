@@ -27144,6 +27144,7 @@ function home() {
     });
     marker1.addListener('click', function (e) {
       infowindow2.close();
+      console.log(infowindow1);
       infowindow1.open(map, marker1);
     });
     marker2.addListener('click', function (e) {
@@ -27165,13 +27166,13 @@ function home() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return home; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return specialities; });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/dist/js/swiper.esm.bundle.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 
 
-function home() {
+function specialities() {
   var specialtiesList;
   var specialtiesListType;
 
@@ -27247,6 +27248,30 @@ function home() {
         });
       }
     }
+  }); // Modal events
+
+  var modalSwiper;
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.home__specialties_list--item').click(function (e) {
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.modal__expertise').length && !modalSwiper) {
+      setTimeout(function () {
+        modalSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.modal__expertise .swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: '.swiper-button-prev',
+            prevEl: '.swiper-button-next'
+          }
+        });
+      }, 100);
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.modal-specialties .modal__article').length) {
+      var h = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.modal-specialties .modal__article').height() / 2 + 64;
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.modal-specialties .modal__article').height(h);
+    }
+
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').addClass('no-scroll');
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()('.modal-specialties').addClass('modal-show');
   });
 }
 

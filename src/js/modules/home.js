@@ -525,6 +525,7 @@ export default function home() {
       
         marker1.addListener('click', function(e) {    
           infowindow2.close();
+          console.log(infowindow1);
           infowindow1.open(map, marker1);
         });
         marker2.addListener('click', function(e) {    

@@ -34,6 +34,9 @@ body {
   margin: 0;
   background-color: #fff;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -322,6 +325,9 @@ textarea:-moz-placeholder {
   line-height: 1.89;
   letter-spacing: normal;
   color: $orange;
+  @media screen and (max-width: 1600px) {
+    // font-size: 3.25vw;
+  }
 }
 .g__black-title {
   margin-top: 6px;
