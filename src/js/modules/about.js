@@ -5,8 +5,17 @@ export default function thinking() {
 		}
 	})
 
-	// Modal events
+	$(window).resize(function(){
+		if($('.modal').is(':visible')){
+			$('.modal').fadeOut(300, function(){
+				$('body').removeClass('no-scroll');
+				$('.modal').removeClass('modal-show');				
+				$('.modal').show();
+			});
+		}
+	});
 
+	// Modal events
 	$('.modal').click(function(e){
 		if($(e.target).hasClass('modal__close') || $(e.target).hasClass('modal__scroll')){
 		  $(e.currentTarget).fadeOut(300, function(){

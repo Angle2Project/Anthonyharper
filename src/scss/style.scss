@@ -2830,6 +2830,9 @@ footer {
   }
   &.modal-about .modal__wrapper {
     padding: 150px 0 120px 0;
+    @media screen and (max-width: 900px) {
+      padding: 64px 0 64px 0;
+    }
   }
   .modal__close {
     position: absolute;
@@ -3005,6 +3008,17 @@ footer {
       }
     }
     @media screen and (max-width: 900px) {
+      height: auto!important;
+      margin-right: 30px;
+    }
+  }
+  &.modal-about .modal__article {
+    > * {
+      @media screen and (max-width: 1440px) {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 1400px) {
       height: auto!important;
       margin-right: 30px;
     }
@@ -3244,6 +3258,17 @@ footer {
     &::after {
       display: none;
     }
+    ul {
+      @media screen and (max-width: 1400px) {
+        height: auto!important;        
+      }
+      li {
+        @media screen and (max-width: 1400px) {
+          width: 100%;
+        }        
+      }      
+    }    
+    
   }
   .modal__awards {
     border-top: 1px solid #a0b3a3;    
@@ -3286,6 +3311,11 @@ footer {
         img {
           width: 100%;
         }
+        @media screen and (max-width: 900px) {
+          width: auto;
+          margin: 0 auto -50px auto;
+          max-width: 360px;
+        }
       }
       .title--name {
         width: 360px;
@@ -3303,6 +3333,9 @@ footer {
           letter-spacing: normal;
           color: #ffffff;
           display: block;
+          @media screen and (max-width: 900px) {
+            font-size: 28px;
+          }
         }
         span {
           display: block;
@@ -3316,6 +3349,10 @@ footer {
           color: #ffffff;
           opacity: 0.6;
         }
+        @media screen and (max-width: 900px) {
+          width: auto;
+          max-width: 360px;          
+        }
       }
       .title--list {
         list-style: none;
@@ -3325,6 +3362,9 @@ footer {
           display: flex;
           align-items: center;
           margin-bottom: 24px;
+          &:last-child {
+            margin-bottom: 0;
+          }
           i {
             width: 25px;
             height: 25px;  
@@ -3344,6 +3384,9 @@ footer {
             line-height: 1.89;
             letter-spacing: normal;
             color: #8f8f8f;
+            @media screen and (max-width: 900px) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -3351,8 +3394,16 @@ footer {
     .modal__flex_body {
       margin-left: 120px;
       flex-grow: 1;
+      @media screen and (max-width: 1440px) {
+        margin-left: 8.33vw;
+        margin-top: 54px;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
     }
   }
+  
 }// end modal
 
 
