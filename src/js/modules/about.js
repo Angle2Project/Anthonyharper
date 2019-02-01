@@ -33,15 +33,26 @@ export default function thinking() {
 		$('.modal-about').addClass('modal-show');
 		
 		if($('.modal-about .modal__article').length){      
-		  $('.modal-about .modal__article').removeAttr('style');
-		  let h = ($('.modal-about .modal__article').height() / 2 + 120);
-		  $('.modal-about .modal__article').height(h);
+		  $('.modal-about .modal__article').removeAttr('style');		  
+		  
+		  let summ = 0;
+		  let h = ($('.modal-about .modal__article').height() / 2);
+		  $('.modal-about .modal__article > *').each(function(i, el){			
+			if(summ > h)return;
+			summ += ($(el).height() + 30);			
+		  })		  
+		  $('.modal-about .modal__article').height(summ);
 		}		
 		if($('.modal-about .modal__transactions').length){
 			$('.modal-about .modal__transactions ul').removeAttr('style');
 			$('.modal-about .modal__transactions ul').each(function(i, el){
-				let h = ($(el).height() / 2 + 200);
-		  		$(el).height(h);
+				let summ = 0;
+				let h = $(el).height() / 2;
+				$(el).find('li').each(function(i, el){
+					if(summ > h)return;
+					summ += ($(el).height() + 30);
+				})				
+		  		$(el).height(summ);
 			});		  	
 		}    
 		$('body').addClass('no-scroll');

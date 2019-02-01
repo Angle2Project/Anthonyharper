@@ -117,13 +117,23 @@ export default function specialities() {
     }
     if($('.modal-specialties .modal__article').length){      
       $('.modal-specialties .modal__article').removeAttr('style');
-      let h = ($('.modal-specialties .modal__article').height() / 2 + 120);
-      $('.modal-specialties .modal__article').height(h);
+      let summ = 0;
+      let h = ($('.modal-specialties .modal__article').height() / 2);      
+      $('.modal-specialties .modal__article > *').each(function(i, el){			
+      if(summ > h)return;
+        summ += ($(el).height() + 30);
+      })
+      $('.modal-specialties .modal__article').height(summ);
     }
     if($('.modal-specialties .modal__transactions').length){      
       $('.modal-specialties .modal__transactions ul').removeAttr('style');
-      let h = ($('.modal-specialties .modal__transactions ul').height() / 2 + 60);
-      $('.modal-specialties .modal__transactions ul').height(h);
+      let summ = 0;
+      let h = ($('.modal-specialties .modal__transactions ul').height() / 2);
+      $('.modal-specialties .modal__transactions ul li').each(function(i, el){
+        if(summ > h)return;
+        summ += ($(el).height() + 30);
+      })				
+      $('.modal-specialties .modal__transactions ul').height(summ);      
       $('.modal-specialties .modal__transactions ul').hide();
       $('.modal__transactions.open').removeClass('open');
       $('.modal-specialties .modal__transactions').unbind('click');
