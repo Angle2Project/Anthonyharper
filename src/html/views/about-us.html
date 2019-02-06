@@ -126,7 +126,18 @@ _.template(require('./../includes/header.html'))(data) %>
       <ul class="filters--list">
         <li>
           <div class="dropdown">
-            <span class="current">Headquarter</span>
+            <span class="current" data-placeholder="Headquarter">Headquarter</span>
+            <ul class="dropdown__list">
+              <li data-value="choose-1">Choose #1</li>
+              <li data-value="choose-1">Business Development and Marketing Manager</li>
+              <li data-value="choose-1">Choose #3</li>
+              <li data-value="choose-1">Choose #4</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <span class="current" data-placeholder="Seniority">Seniority</span>
             <ul class="dropdown__list">
               <li data-value="choose-1">Choose #1</li>
               <li data-value="choose-1">Choose #2</li>
@@ -137,7 +148,7 @@ _.template(require('./../includes/header.html'))(data) %>
         </li>
         <li>
           <div class="dropdown">
-            <span class="current">Seniority</span>
+            <span class="current" data-placeholder="Name">Name</span>
             <ul class="dropdown__list">
               <li data-value="choose-1">Choose #1</li>
               <li data-value="choose-1">Choose #2</li>
@@ -148,18 +159,7 @@ _.template(require('./../includes/header.html'))(data) %>
         </li>
         <li>
           <div class="dropdown">
-            <span class="current">Name</span>
-            <ul class="dropdown__list">
-              <li data-value="choose-1">Choose #1</li>
-              <li data-value="choose-1">Choose #2</li>
-              <li data-value="choose-1">Choose #3</li>
-              <li data-value="choose-1">Choose #4</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <span class="current">Team</span>
+            <span class="current" data-placeholder="Team">Team</span>
             <ul class="dropdown__list">
               <li data-value="choose-1">Choose #1</li>
               <li data-value="choose-1">Choose #2</li>
@@ -212,7 +212,7 @@ _.template(require('./../includes/header.html'))(data) %>
           <img src="./img/about-us-team-5.jpg" alt="" />
         </div>
         <div class="info">
-          <b>Solicitor | Property</b>
+          <b>Business Development and Marketing Manager</b>
           <span>Alex Campbell</span>
         </div>         
       </li>

@@ -32,6 +32,18 @@ export default function thinking() {
 		let el = $(this);
 		let val = $(this).attr('data-value');
 		let text = $(this).text();
+		$('.about__team_filters .dropdown').removeClass('selected');
+		$('.about__team_filters .dropdown').each(function(i, el){
+			let plaeceholder = $(el).find('.current').attr('data-placeholder');
+			console.log($(el).find('.current'));
+			$(el).find('.current').text(plaeceholder);
+			$(el).find('li.selected').removeClass('selected');
+			$(el).removeClass('selected');
+			
+		})
+
+
+		$(this).closest('.dropdown').addClass('selected');
 		$(this).closest('.dropdown').find('.current').text(text);
 		$(this).closest('.dropdown__list').find('.selected').removeClass('selected');
 		$(this).addClass('selected');
