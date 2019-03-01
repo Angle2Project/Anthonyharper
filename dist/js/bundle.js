@@ -26354,6 +26354,13 @@ var app = {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header__nav_button').click(function (e) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('header').toggleClass('menu--active');
     });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).scroll(function (e) {
+      if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).scrollTop() > 0) {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('header').addClass('scroll');
+      } else {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('header').removeClass('scroll');
+      }
+    });
     var page = jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').attr('class'); //Scrollbar.init(document.querySelector('#main-scroll'))
 
     switch (page) {
@@ -26412,6 +26419,40 @@ function thinking() {
         $('.modal').show();
       });
     }
+  }); //Dropdown
+
+  $('.dropdown').mouseenter(function () {
+    $(this).addClass('hover');
+    $(this).addClass('index');
+    $(this).find('.dropdown__list').slideDown(200);
+  });
+  $('.dropdown').mouseleave(function () {
+    var el = $(this);
+    $(this).removeClass('hover');
+    $(this).find('.dropdown__list').slideUp(200, function () {
+      el.removeClass('index');
+    });
+  });
+  $('.dropdown__list li').click(function () {
+    var el = $(this);
+    var val = $(this).attr('data-value');
+    var text = $(this).text();
+    $('.about__team_filters .dropdown').removeClass('selected');
+    $('.about__team_filters .dropdown').each(function (i, el) {
+      var plaeceholder = $(el).find('.current').attr('data-placeholder');
+      console.log($(el).find('.current'));
+      $(el).find('.current').text(plaeceholder);
+      $(el).find('li.selected').removeClass('selected');
+      $(el).removeClass('selected');
+    });
+    $(this).closest('.dropdown').addClass('selected');
+    $(this).closest('.dropdown').find('.current').text(text);
+    $(this).closest('.dropdown__list').find('.selected').removeClass('selected');
+    $(this).addClass('selected');
+    $(this).closest('.dropdown__list').slideUp(200, function () {
+      el.closest('.dropdown').removeClass('index');
+    });
+    $(this).closest('.dropdown').removeClass('hover');
   }); // Modal events
 
   $('.modal').click(function (e) {
@@ -26813,6 +26854,7 @@ function home() {
     specialtiesListType = 'desktop';
     specialtiesList = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('#home-specialties-slider', {
       slidesPerView: 4,
+      slidesPerColumn: 2,
       navigation: {
         nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
         prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev'
@@ -26849,6 +26891,7 @@ function home() {
         specialtiesListType = 'desktop';
         specialtiesList = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('#home-specialties-slider', {
           slidesPerView: 4,
+          slidesPerColumn: 2,
           navigation: {
             nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
             prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev'
@@ -27228,27 +27271,24 @@ function specialities() {
   var specialtiesList;
   var specialtiesListType;
 
-  if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).width() > 900) {
-    specialtiesListType = 'desktop';
-    specialtiesList = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('#home-specialties-slider', {
-      slidesPerView: 4,
-      navigation: {
-        nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
-        prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev'
-      },
-      pagination: {
-        el: '#home-specialties-slider .home__main-slider_navigation--pagination',
-        type: 'fraction',
-        formatFractionCurrent: function formatFractionCurrent(current) {
-          return current < 10 ? '0' + current : current;
-        },
-        formatFractionTotal: function formatFractionTotal(total) {
-          return total < 10 ? '0' + total : total;
-        }
-      }
-    });
+  if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).width() > 900) {// specialtiesList = new Swiper('#home-specialties-slider', {
+    //   slidesPerView: 4,
+    //   navigation: {
+    //     nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
+    //     prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',
+    //   },
+    //   pagination: {
+    //     el: '#home-specialties-slider .home__main-slider_navigation--pagination',
+    //     type : 'fraction',
+    //     formatFractionCurrent : function(current){
+    //       return current < 10 ? '0'+current : current;
+    //     },
+    //     formatFractionTotal : function(total){
+    //       return total < 10 ? '0' + total : total;
+    //     }
+    //   }
+    // });  
   } else {
-    specialtiesListType = 'mobile';
     specialtiesList = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.home__specialties_list', {
       slidesPerView: 2,
       slidesPerColumn: 2,
@@ -27262,33 +27302,12 @@ function specialities() {
 
   jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).resize(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).width() > 900) {
-      if (specialtiesListType == 'mobile') {
+      if (specialtiesList) {
         specialtiesList.destroy();
         specialtiesList = null;
-        specialtiesListType = 'desktop';
-        specialtiesList = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('#home-specialties-slider', {
-          slidesPerView: 4,
-          navigation: {
-            nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
-            prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev'
-          },
-          pagination: {
-            el: '#home-specialties-slider .home__main-slider_navigation--pagination',
-            type: 'fraction',
-            formatFractionCurrent: function formatFractionCurrent(current) {
-              return current < 10 ? '0' + current : current;
-            },
-            formatFractionTotal: function formatFractionTotal(total) {
-              return total < 10 ? '0' + total : total;
-            }
-          }
-        });
       }
     } else {
-      if (specialtiesListType == 'desktop') {
-        specialtiesList.destroy();
-        specialtiesList = null;
-        specialtiesListType = 'mobile';
+      if (!specialtiesList) {
         specialtiesList = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.home__specialties_list', {
           slidesPerView: 2,
           slidesPerColumn: 2,

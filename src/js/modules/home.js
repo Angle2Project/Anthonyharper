@@ -25,7 +25,7 @@ export default function home() {
         }
       },      
       slidesPerView: 1,
-      speed: 700,
+      speed: 700      
       //watchOverflow : true
       //spaceBetween: 1
     });	
@@ -35,6 +35,7 @@ export default function home() {
       specialtiesListType = 'desktop';
       specialtiesList = new Swiper('#home-specialties-slider', {
         slidesPerView: 4,
+        slidesPerColumn: 2,
         navigation: {
           nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
           prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',
@@ -70,6 +71,7 @@ export default function home() {
           specialtiesListType = 'desktop';
           specialtiesList = new Swiper('#home-specialties-slider', {
             slidesPerView: 4,
+            slidesPerColumn: 2,
             navigation: {
               nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
               prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',

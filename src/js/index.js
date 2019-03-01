@@ -13,13 +13,19 @@ var app = {
     if (document.querySelector('.wow')) {
       window.wow = new WOW.WOW({
         live: false
-      })
-
-      window.wow.init()
+      });
+      window.wow.init();
     }
     $('.header__nav_button').click(function(e){
       $('header').toggleClass('menu--active');
-    })
+    });
+    $(document).scroll(function(e){
+      if($(document).scrollTop() > 0){
+        $('header').addClass('scroll');
+      }else{
+        $('header').removeClass('scroll');
+      }
+    });
     var page = $('body').attr('class')
     //Scrollbar.init(document.querySelector('#main-scroll'))
     switch (page) {

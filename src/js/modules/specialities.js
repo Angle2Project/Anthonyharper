@@ -3,27 +3,25 @@ import $ from 'jquery';
 export default function specialities() {
   let specialtiesList;
   let specialtiesListType;
-  if($(window).width() > 900){
-    specialtiesListType = 'desktop';
-    specialtiesList = new Swiper('#home-specialties-slider', {
-      slidesPerView: 4,
-      navigation: {
-        nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
-        prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',
-      },
-      pagination: {
-        el: '#home-specialties-slider .home__main-slider_navigation--pagination',
-        type : 'fraction',
-        formatFractionCurrent : function(current){
-          return current < 10 ? '0'+current : current;
-        },
-        formatFractionTotal : function(total){
-          return total < 10 ? '0' + total : total;
-        }
-      }
-    });  
-  }else{
-    specialtiesListType = 'mobile';
+  if($(window).width() > 900){    
+    // specialtiesList = new Swiper('#home-specialties-slider', {
+    //   slidesPerView: 4,
+    //   navigation: {
+    //     nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
+    //     prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',
+    //   },
+    //   pagination: {
+    //     el: '#home-specialties-slider .home__main-slider_navigation--pagination',
+    //     type : 'fraction',
+    //     formatFractionCurrent : function(current){
+    //       return current < 10 ? '0'+current : current;
+    //     },
+    //     formatFractionTotal : function(total){
+    //       return total < 10 ? '0' + total : total;
+    //     }
+    //   }
+    // });  
+  }else{    
     specialtiesList = new Swiper('.home__specialties_list', {
       slidesPerView: 2,
       slidesPerColumn: 2,
@@ -35,34 +33,13 @@ export default function specialities() {
     }); 
   }
   $(window).resize(function(){
-    if($(window).width() > 900){
-      if(specialtiesListType == 'mobile'){
+    if($(window).width() > 900){      
+      if(specialtiesList){
         specialtiesList.destroy();
         specialtiesList = null;
-        specialtiesListType = 'desktop';
-        specialtiesList = new Swiper('#home-specialties-slider', {
-          slidesPerView: 4,
-          navigation: {
-            nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
-            prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',
-          },
-          pagination: {
-            el: '#home-specialties-slider .home__main-slider_navigation--pagination',
-            type : 'fraction',
-            formatFractionCurrent : function(current){
-              return current < 10 ? '0'+current : current;
-            },
-            formatFractionTotal : function(total){
-              return total < 10 ? '0' + total : total;
-            }
-          }
-        });
       }
     }else{
-      if(specialtiesListType == 'desktop'){
-        specialtiesList.destroy();
-        specialtiesList = null;
-        specialtiesListType = 'mobile';
+      if(!specialtiesList){
         specialtiesList = new Swiper('.home__specialties_list', {
           slidesPerView: 2,
           slidesPerColumn: 2,
@@ -71,8 +48,8 @@ export default function specialities() {
             el: '.swiper-pagination',
             clickable: true,
           }
-        }); 
-      }
+        });
+      }      
     }
     if($('.modal').is(':visible')){
       $('.modal').fadeOut(300, function(){
