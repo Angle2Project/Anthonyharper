@@ -148,7 +148,7 @@ textarea:-moz-placeholder {
   transition: all 300ms ease;
   border: none;
   &.short {
-    width: 200px;
+    width: 220px;
   }
   &::before {
     content: '';
@@ -237,7 +237,7 @@ textarea:-moz-placeholder {
   position: relative;
   transition: all 300ms ease;
   &.short {
-    width: 200px;
+    width: 220px;
   }
   &::before {
     content: '';

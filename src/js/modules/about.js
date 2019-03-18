@@ -70,9 +70,10 @@ export default function thinking() {
 			$('body').addClass('no-scroll');
 			$('.modal-about').addClass('modal-show');
 			
-			if($('.modal-about .modal__article').length){      
-				$('.modal-about .modal__article').removeAttr('style');		  
-				
+			if($('.modal-about .modal__article').length){
+				$('.modal-about .modal__article').removeAttr('style');
+				$('.modal-about .modal__article .solo').removeClass('solo');				
+				if($('.modal-about .modal__article p').length == 1)$('.modal-about .modal__article p').addClass('solo');								
 				let summ = 0;
 				let h = ($('.modal-about .modal__article').height() / 2);
 				$('.modal-about .modal__article > *').each(function(i, el){			

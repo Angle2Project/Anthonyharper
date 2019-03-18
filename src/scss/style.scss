@@ -693,7 +693,7 @@ header .wrapper {
 }
 .home__thinking_description {
   margin-top: 23px;
-  width: 450px;
+  width: calc(100% - 480px -95px);
   font-family: $Hind;
   font-size: 18px;
   font-weight: 500;
@@ -703,6 +703,9 @@ header .wrapper {
   letter-spacing: normal;
   color: #8f8f8f;
   align-self: flex-end;
+  @media screen and (max-width: 1440px) {
+    width: calc(100% - 30% -95px);
+  }
 }
 .home__thinking_body {
   margin-top: 80px;  
@@ -3127,6 +3130,19 @@ footer {
       margin-left: 30px;
     }
   }
+  .modal__info-list {
+    padding: 0;
+    margin: 0 0 30px 0;
+    list-style: none;
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    color: #e6792c;
+  }
   .modal__article {
     display: flex;
     flex-direction: column;
@@ -3134,8 +3150,13 @@ footer {
     > * {
       margin: 0 0 30px 0;
       width: calc(50% - 30px);
+      &.solo {
+        width: auto;
+        padding-right: 30px;
+      }
       @media screen and (max-width: 900px) {
         width: auto;
+        padding-right: 30px;
       }
     }
     > label {
