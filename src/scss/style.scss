@@ -65,6 +65,9 @@ header .wrapper {
 }
 .header__nav > li {
   margin-right: 25px;
+  @media screen and (max-width: 1600px) {
+    margin-right: 1.56vw;
+  }
 }
 .header__nav > li:last-child {
   margin-right: 0;
@@ -81,6 +84,9 @@ header .wrapper {
   line-height: normal;
   letter-spacing: normal;
   color: #4c5c4f;
+  @media screen and (max-width: 1600px) {
+    padding: 0 1.06vw;
+  }
 }
 .header__nav > li.current a {
   color: $orange;
@@ -2049,6 +2055,9 @@ header .wrapper {
   margin-top: 222px;
   background-color: #fbf7f2;
   padding: 112px 0 20px 0;
+  &.our-people {
+    margin-top: 0;
+  }
   .g__orage-title {
     text-align: center;
   }
@@ -2888,7 +2897,7 @@ footer {
   background-color: #1b231d;
 }
 .footer__top {
-  padding: 105px 215px 0 215px;
+  padding: 105px 165px 0 165px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2927,7 +2936,7 @@ footer {
   color: $orange;
 }
 .footer__bottom {
-  padding: 54px 215px 0 215px;
+  padding: 54px 165px 0 165px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3049,31 +3058,62 @@ footer {
     position: absolute;
     top: 120px;
     left: 0;
-    width: 360px;
-    min-height: 92px;
-    font-family: LucidaGrande;
-    font-size: 32px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.47;
-    letter-spacing: normal;
-    color: #ffffff;
-    background-color: #e6792c;
-    padding: 22px 30px;
-    display: flex;
-    align-items: center;
+    width: 360px;    
+    h3 {
+      min-height: 92px;
+      font-family: LucidaGrande;
+      font-size: 32px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.47;
+      letter-spacing: normal;
+      color: #ffffff;
+      background-color: #e6792c;
+      padding: 22px 30px;
+      display: flex;
+      align-items: center;
+    }
+    .short-text {
+      padding: 30px 0 30px 30px;
+      font-family: LucidaGrande;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.89;
+      letter-spacing: normal;
+      color: #9c9c9c;
+    }
     @media screen and (max-width: 1600px) {
-     width: 22.5vw;
-     font-size: 2vw;
+     width: 24.5vw;
+     h3 {
+      font-size: 2vw;  
+     }
+     .short-text {
+      font-size: 16px;   
+     }
     }
     @media screen and (max-width: 1200px) {
       position: static;
       margin-bottom: 30px;
       width: auto;
-      max-width: 50%;
+      //max-width: 50%;
       display: inline-flex;
-      font-size: 16px;
+      h3 {
+        align-self: center;
+        font-size: 16px;
+      }
+      .short-text {
+        font-size: 14px;
+        padding-right: 30px;
+       }
+    }
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      h3 {
+        align-self: flex-start;
+      }
     }
     
   }
