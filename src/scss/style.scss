@@ -76,7 +76,7 @@ header .wrapper {
   display: inline-block;
   padding: 0 17px;
   position: relative;
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -118,7 +118,7 @@ header .wrapper {
   justify-content: center;
   align-items: center;
   background-color: rgba(230, 121, 44, 1);
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -217,7 +217,7 @@ header .wrapper {
   align-items: flex-start;  
 }
 .home__main-slider_slide .orange-title {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -228,7 +228,7 @@ header .wrapper {
   margin-bottom: 11px;
 }
 .home__main-slider_slide .black-title {
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 48px;
   font-weight: normal;
   font-style: normal;
@@ -242,7 +242,7 @@ header .wrapper {
   }
 }
 .home__main-slider_slide .description {
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -254,7 +254,7 @@ header .wrapper {
 }
 .home__main-slider_slide .more a {
   display: inline-block;
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -378,7 +378,7 @@ header .wrapper {
   top: 87px;
   left: 97px;
   z-index: 1;
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -391,7 +391,7 @@ header .wrapper {
   }
 }
 .home__main-slider_navigation .swiper-pagination-current {
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 32px;
   font-weight: normal;
   font-style: normal;
@@ -501,7 +501,7 @@ header .wrapper {
   padding: 95px 0 584px 0;
 }
 .home__specialties_orange-title {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -512,7 +512,7 @@ header .wrapper {
   text-align: center;
 }
 .home__specialties_black-title {
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 52px;
   font-weight: normal;
   font-style: normal;
@@ -529,7 +529,7 @@ header .wrapper {
 .home__specialties_description {
   width: 525px;
   margin: 40px auto 0 auto;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -603,7 +603,7 @@ header .wrapper {
   max-height: 100%;
 }
 .home__specialties_list .specialties--title {
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -620,7 +620,7 @@ header .wrapper {
 .home__specialties_list .specialties--description {
   display: none;
   margin-top: 6px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -666,7 +666,7 @@ header .wrapper {
   }
 }
 .home__thinking_title span {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -679,7 +679,7 @@ header .wrapper {
 .home__thinking_title b {
   display: block;
   margin-top: 6px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 52px;
   font-weight: normal;
   font-style: normal;
@@ -694,7 +694,7 @@ header .wrapper {
 .home__thinking_description {
   margin-top: 23px;
   width: 450px;
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -768,7 +768,7 @@ header .wrapper {
   height: 100%;
 }
 .home__thinking_tile .tile--date {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -786,7 +786,7 @@ header .wrapper {
   }
 }
 .home__thinking_tile .tile--title {
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 32px;
   font-weight: bold;
   font-style: normal;
@@ -801,7 +801,7 @@ header .wrapper {
   }
 }
 .home__thinking_tile .tile--description {
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -817,7 +817,7 @@ header .wrapper {
   }
 }
 .home__thinking_tile .tile--more a {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -942,7 +942,7 @@ header .wrapper {
   }
 }
 .home__get-in-touch_title span {
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -953,7 +953,7 @@ header .wrapper {
   display: block;
 }
 .home__get-in-touch_title b {
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 52px;
   font-weight: 500;
   font-style: normal;
@@ -974,7 +974,7 @@ header .wrapper {
   z-index: 2;
 }
 .home__get-in-touch_form .form--title {
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -990,7 +990,7 @@ header .wrapper {
   label {
     display: block;
     margin-bottom: 4px;
-    font-family: LucidaGrande;
+    font-family: $LucidaGrande;
     font-size: 18px;
     font-weight: bold;
     font-style: normal;
@@ -1005,7 +1005,7 @@ header .wrapper {
   span {
     display: none;
     margin-top: 4px;
-    font-family: LucidaGrande;
+    font-family: $LucidaGrande;
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
@@ -1023,7 +1023,7 @@ header .wrapper {
   height: 48px;
   background-color: #ffffff;
   padding: 0 26px;
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -1047,7 +1047,7 @@ header .wrapper {
   label {
     display: block;
     margin-bottom: 4px;
-    font-family: LucidaGrande;
+    font-family: $LucidaGrande;
     font-size: 18px;
     font-weight: bold;
     font-style: normal;
@@ -1062,7 +1062,7 @@ header .wrapper {
   span {
     display: none;
     margin-top: 4px;
-    font-family: LucidaGrande;
+    font-family: $LucidaGrande;
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
@@ -1079,7 +1079,7 @@ header .wrapper {
   width: 100%;
   height: 128px;
   padding: 24px 26px;
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -1163,7 +1163,7 @@ header .wrapper {
   }
 }
 .careers__company_orange-title {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1174,7 +1174,7 @@ header .wrapper {
 }
 .careers__company_black-title {
   margin-top: 6px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 52px;
   font-weight: normal;
   font-style: normal;
@@ -1188,7 +1188,7 @@ header .wrapper {
 }
 .careers__company_description {
   margin-top: 40px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1263,7 +1263,7 @@ header .wrapper {
   }
 }
 .careers__company_orange-title {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1274,7 +1274,7 @@ header .wrapper {
 }
 .careers__company_black-title {
   margin-top: 6px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 52px;
   font-weight: normal;
   font-style: normal;
@@ -1285,7 +1285,7 @@ header .wrapper {
 }
 .careers__company_description {
   margin-top: 40px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1305,7 +1305,7 @@ header .wrapper {
 }
 .careers__current_orange-title {
   margin-top: 92px;
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1317,7 +1317,7 @@ header .wrapper {
 }
 .careers__current_black-title {
   margin-top: 9px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 52px;
   font-weight: normal;
   font-style: normal;
@@ -1330,7 +1330,7 @@ header .wrapper {
 .careers__current_description {
   margin-top: 7px;
   width: 525px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1375,7 +1375,7 @@ header .wrapper {
   width: 450px;
 }
 .careers__current_list .li--title {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -1386,7 +1386,7 @@ header .wrapper {
 }
 .careers__current_list .li--description {
   margin-top: 8px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1477,7 +1477,7 @@ header .wrapper {
   }
 }
 .contacts__head_title .title-orange {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1488,7 +1488,7 @@ header .wrapper {
 }
 .contacts__head_title .title-black {
   margin-top: 6px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 52px;
   font-weight: normal;
   font-style: normal;
@@ -1499,7 +1499,7 @@ header .wrapper {
 }
 .contacts__head_title .title-desciption {
   margin-top: 26px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1515,7 +1515,7 @@ header .wrapper {
   }
 }
 .contacts__title_orange {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1531,7 +1531,7 @@ header .wrapper {
 }
 .contacts__title_black {
   margin-top: 6px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 52px;
   font-weight: normal;
   font-style: normal;
@@ -1551,7 +1551,7 @@ header .wrapper {
 }
 .contacts__title_description {
   margin-top: 40px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1592,7 +1592,7 @@ header .wrapper {
   border: 1px solid #c7c7c7;
   outline: none;
   transition: all 300ms ease;
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1629,7 +1629,7 @@ header .wrapper {
   border: 1px solid #c7c7c7;
   outline: none;
   transition: all 300ms ease;
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1679,7 +1679,7 @@ header .wrapper {
   border: 1px solid #c7c7c7;
   outline: none;
   transition: all 300ms ease;
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1707,7 +1707,7 @@ header .wrapper {
   }
 }
 .contacts__visit_orange {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1723,7 +1723,7 @@ header .wrapper {
 }
 .contacts__visit_black {
   margin-top: 6px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 52px;
   font-weight: normal;
   font-style: normal;
@@ -1743,7 +1743,7 @@ header .wrapper {
 }
 .contacts__visit_description {
   margin-top: 40px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -1952,7 +1952,7 @@ header .wrapper {
         }
         b {
           display: block;
-          font-family: Helvetica;
+          font-family: $Helvetica;
           font-size: 18px;
           font-weight: normal;
           font-style: normal;
@@ -1963,7 +1963,7 @@ header .wrapper {
         }
         span {
           display: block;
-          font-family: Helvetica;
+          font-family: $Helvetica;
           font-size: 18px;
           font-weight: normal;
           font-style: normal;
@@ -1979,7 +1979,7 @@ header .wrapper {
 .dropdown {
   width: 100%;
   height: 100%;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -2057,6 +2057,7 @@ header .wrapper {
   padding: 112px 0 20px 0;
   &.our-people {
     margin-top: 0;
+    padding-top: 50px;
   }
   .g__orage-title {
     text-align: center;
@@ -2076,7 +2077,7 @@ header .wrapper {
     position: relative;
     z-index: 1;
     h4 {
-      font-family: LucidaGrande;
+      font-family: $LucidaGrande;
       font-size: 18px;
       font-weight: normal;
       font-style: normal;
@@ -2125,7 +2126,7 @@ header .wrapper {
           position: relative;
           justify-content: center;
           align-items: center;
-          font-family: Helvetica;
+          font-family: $Helvetica;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -2200,7 +2201,7 @@ header .wrapper {
         justify-content: center;
         box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);      
         b {          
-          font-family: LucidaGrande;
+          font-family: $LucidaGrande;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -2210,7 +2211,7 @@ header .wrapper {
           color: #e6792c;          
         }
         span {          
-          font-family: LucidaGrande;
+          font-family: $LucidaGrande;
           font-size: 18px;
           font-weight: normal;
           font-style: normal;
@@ -2478,7 +2479,7 @@ header .wrapper {
     }
     .head--filters {
       .head--filters-title {
-        font-family: LucidaGrande;
+        font-family: $LucidaGrande;
         font-size: 14px;
         font-weight: normal;
         font-style: normal;
@@ -2515,7 +2516,7 @@ header .wrapper {
           border: 1px solid #c7c7c7;
           outline: none;
           transition: all 300ms ease;
-          font-family: Hind;
+          font-family: $Hind;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -2550,7 +2551,7 @@ header .wrapper {
         border: 1px solid #c7c7c7;
         outline: none;
         transition: all 300ms ease;
-        font-family: Hind;
+        font-family: $Hind;
         font-size: 14px;
         font-weight: normal;
         font-style: normal;
@@ -2605,7 +2606,7 @@ header .wrapper {
       height: 25vw;
     }
     time {
-      font-family: LucidaGrande;
+      font-family: $LucidaGrande;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -2619,7 +2620,7 @@ header .wrapper {
     }
     h4 {
       margin-top: 12px;
-      font-family: Hind;
+      font-family: $Hind;
       font-size: 32px;
       font-weight: bold;
       font-style: normal;
@@ -2636,7 +2637,7 @@ header .wrapper {
     }
     .list--description {
       margin-top: 15px;
-      font-family: Hind;
+      font-family: $Hind;
       font-size: 18px;
       font-weight: 500;
       font-style: normal;
@@ -2653,7 +2654,7 @@ header .wrapper {
     }
     .list--more {
       margin-top: 39px;
-      font-family: LucidaGrande;
+      font-family: $LucidaGrande;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -2773,7 +2774,7 @@ header .wrapper {
   border: 1px solid #c7c7c7;
   outline: none;
   transition: all 300ms ease;
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -2864,7 +2865,7 @@ header .wrapper {
 
 #map .marker-window-info {
   background: url('../img/map-infowindow.png') no-repeat 3px 16px/13px 21px;
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -2922,7 +2923,7 @@ footer {
   margin-right: 0;
 }
 .footer__nav li a {
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -2942,7 +2943,7 @@ footer {
   align-items: center;
 }
 .footer__copyright {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -3061,7 +3062,7 @@ footer {
     width: 360px;    
     h3 {
       min-height: 92px;
-      font-family: LucidaGrande;
+      font-family: $LucidaGrande;
       font-size: 32px;
       font-weight: normal;
       font-style: normal;
@@ -3076,7 +3077,7 @@ footer {
     }
     .short-text {
       padding: 30px 0 30px 30px;
-      font-family: LucidaGrande;
+      font-family: $LucidaGrande;
       font-size: 18px;
       font-weight: normal;
       font-style: normal;
@@ -3139,7 +3140,7 @@ footer {
     }
     > label {
       display: block;
-      font-family: LucidaGrande;
+      font-family: $LucidaGrande;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -3149,12 +3150,12 @@ footer {
       color: #e6792c;
     }
     p {
-      font-family: LucidaGrande;
+      font-family: $LucidaGrande;
       font-size: 18px;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.89;
+      line-height: 1.79;
       letter-spacing: normal;
       color: #9c9c9c;
       @media screen and (max-width: 1440px) {        
@@ -3165,18 +3166,18 @@ footer {
       }
     }
     .li {      
-      padding-left: 40px;
+      padding-left: 30px;
       position: relative;
       &::before {
         content: "";
         display: block;
-        width: 10px;
-        height: 10px;
+        width: 6px;
+        height: 6px;
         background-color: #e6792c;
         border-radius: 50%;
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 14px;
       }      
     }
     b {
@@ -3188,7 +3189,7 @@ footer {
       background: url('../img/qoute.svg') no-repeat 0 31px / 39px 34px;
       label {
         display: block;
-        font-family: LucidaGrande;
+        font-family: $LucidaGrande;
         font-size: 14px;
         font-weight: normal;
         font-style: normal;
@@ -3200,7 +3201,7 @@ footer {
       span {
         display: block;
         margin: 37px 0 0 47px;
-        font-family: LucidaGrande;
+        font-family: $LucidaGrande;
         font-size: 20px;
         font-weight: normal;
         font-style: normal;
@@ -3253,7 +3254,7 @@ footer {
     padding-top: 47px;
     position: relative;
     .modal__expertise_title {
-      font-family: LucidaGrande;
+      font-family: $LucidaGrande;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -3272,7 +3273,7 @@ footer {
         b {
           display: block;
           margin-top: 25px;
-          font-family: Helvetica;
+          font-family: $Helvetica;
           font-size: 18px;
           font-weight: normal;
           font-style: normal;
@@ -3284,7 +3285,7 @@ footer {
         span {
           display: block;
           margin-top: 8px;
-          font-family: Helvetica;
+          font-family: $Helvetica;
           font-size: 12px;
           font-weight: normal;
           font-style: normal;
@@ -3422,8 +3423,8 @@ footer {
       transform: rotate(180deg);
     }
     .modal__transactions_title {
-      font-family: LucidaGrande;
-      font-size: 14px;
+      font-family: $LucidaGrande;
+      font-size: 18px;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -3441,14 +3442,14 @@ footer {
       li {
         width: calc(50% - 30px);
         margin-bottom: 30px;
-        padding-left: 40px;
+        padding-left: 30px;
         position: relative;
-        font-family: LucidaGrande;
+        font-family: $LucidaGrande;
         font-size: 18px;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: 1.89;
+        line-height: 1.79;
         letter-spacing: normal;
         color: #9c9c9c;
         @media screen and (max-width: 1440px) {        
@@ -3460,13 +3461,13 @@ footer {
         &::before {
           content: "";
           display: block;
-          width: 10px;
-          height: 10px;
+          width: 6px;
+          height: 6px;
           background-color: #e6792c;
           border-radius: 50%;
           position: absolute;
           left: 0;
-          top: 10px;
+          top: 14px;
         }
         @media screen and (max-width: 900px) {
           width: auto;
@@ -3500,7 +3501,7 @@ footer {
     margin-right: 30px;
     padding: 17px 0;
     .modal__awards_title {
-      font-family: LucidaGrande;
+      font-family: $LucidaGrande;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -3550,7 +3551,7 @@ footer {
         position: relative;
         margin-right: 30px;
         b {
-          font-family: LucidaGrande;
+          font-family: $LucidaGrande;
           font-size: 32px;
           font-weight: normal;
           font-style: normal;
@@ -3565,8 +3566,8 @@ footer {
         }
         span {
           display: block;
-          font-family: LucidaGrande;
-          font-size: 14px;
+          font-family: $LucidaGrande;
+          font-size: 18px;
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
@@ -3602,7 +3603,7 @@ footer {
             }
           }          
           span {
-            font-family: Helvetica;
+            font-family: $Helvetica;
             font-size: 18px;
             font-weight: normal;
             font-style: normal;

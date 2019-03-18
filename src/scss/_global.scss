@@ -136,7 +136,7 @@ textarea:-moz-placeholder {
   height: 62px;
   display: block;
   background-color: $orange;
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -226,7 +226,7 @@ textarea:-moz-placeholder {
   display: block;
   background-color: transparent;
   border: 1px solid $darkBorder;
-  font-family: Hind;
+  font-family: $Hind;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -317,7 +317,7 @@ textarea:-moz-placeholder {
 }
 
 .g__orage-title {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -331,7 +331,7 @@ textarea:-moz-placeholder {
 }
 .g__black-title {
   margin-top: 6px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 52px;
   font-weight: normal;
   font-style: normal;
@@ -346,7 +346,7 @@ textarea:-moz-placeholder {
 }
 .g__block-description {
   margin-top: 40px;
-  font-family: Helvetica;
+  font-family: $Helvetica;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -360,7 +360,7 @@ textarea:-moz-placeholder {
 }
 
 .slider__navigation {
-  font-family: LucidaGrande;
+  font-family: $LucidaGrande;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
