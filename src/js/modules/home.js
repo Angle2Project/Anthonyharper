@@ -1,8 +1,7 @@
 import Swiper from 'swiper';
 //import $ from 'jquery';
 import IMask from 'imask';
-export default function home() {  
-  console.log(document.getElementById('form-phone'))
+export default function home() {
   var phoneMask = new IMask(
   document.getElementById('form-phone'), {
     mask: '(00)000 0000'

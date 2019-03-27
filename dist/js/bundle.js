@@ -26824,7 +26824,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function home() {
-  console.log(document.getElementById('form-phone'));
   var phoneMask = new imask__WEBPACK_IMPORTED_MODULE_1___default.a(document.getElementById('form-phone'), {
     mask: '(00)000 0000'
   }); // Swiper init  

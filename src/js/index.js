@@ -1,3 +1,5 @@
+
+
 import $ from 'jquery'
 //import Scrollbar from 'smooth-scrollbar'
 // import WOW from 'wowjs'
@@ -8,6 +10,7 @@ import thinking from './modules/thinking'
 import about from './modules/about'
 
 $(document).ready(() => {})
+
 var app = {
   init: function() {
     if (document.querySelector('.wow')) {
