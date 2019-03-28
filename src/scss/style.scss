@@ -3071,6 +3071,7 @@ footer {
       margin-right: auto;
       margin-left: auto;
       min-height: 270px;
+      text-align: center;
       @media screen and (max-width: 1600px){
         padding: 5.625vw 13.4375vw;
       }
@@ -3084,6 +3085,44 @@ footer {
       }
       h3 {
         margin-top: 24px;
+        line-height: 1.43;
+      }
+      .author {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: center;
+        text-align: left;
+        .author--pfoto {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .author--info {
+          margin-left: 16px;
+          font-family: Verdana;          
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.3;
+          letter-spacing: normal;
+          b {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: $h3Color;
+          }
+          span {
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            color: #9c9c9c;
+          }
+        }
       }
     }
     .blog__body {
