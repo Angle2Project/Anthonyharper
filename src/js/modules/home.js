@@ -35,6 +35,7 @@ export default function home() {
       specialtiesList = new Swiper('#home-specialties-slider', {
         slidesPerView: 4,
         slidesPerColumn: 2,
+        slidesPerColumnFill: 'row',
         navigation: {
           nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
           prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',
