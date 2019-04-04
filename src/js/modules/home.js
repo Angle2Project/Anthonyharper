@@ -56,6 +56,7 @@ export default function home() {
       specialtiesList = new Swiper('.home__specialties_list', {
         slidesPerView: 2,
         slidesPerColumn: 2,
+        slidesPerColumnFill: 'row',
         spaceBetween: 8,
         pagination: {
           el: '.swiper-pagination',
@@ -72,6 +73,7 @@ export default function home() {
           specialtiesList = new Swiper('#home-specialties-slider', {
             slidesPerView: 4,
             slidesPerColumn: 2,
+            slidesPerColumnFill: 'row',
             navigation: {
               nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
               prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev',
@@ -96,6 +98,7 @@ export default function home() {
           specialtiesList = new Swiper('.home__specialties_list', {
             slidesPerView: 2,
             slidesPerColumn: 2,
+            slidesPerColumnFill: 'row',
             spaceBetween: 8,
             pagination: {
               el: '.swiper-pagination',

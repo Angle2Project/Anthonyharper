@@ -26856,6 +26856,7 @@ function home() {
     specialtiesList = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('#home-specialties-slider', {
       slidesPerView: 4,
       slidesPerColumn: 2,
+      slidesPerColumnFill: 'row',
       navigation: {
         nextEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-next',
         prevEl: '#home-specialties-slider .home__main-slider_navigation--arrows .arrow-prev'
