@@ -10,15 +10,15 @@
 
 4. Скопируйте в папку файлы из данного проекта. -->
 
-**npm run dev** npm i
+run **npm i**
 
-**npm run dev** build the dev version.
+**npm run dev** - build the dev version.
 
-**npm run build** build production version.
+**npm run build** - build production version.
 
-**npm run watch** starts the mode of automatic viewing of changes in project files with automatic addition of modified files
+**npm run watch** - starts the mode of automatic viewing of changes in project files with automatic addition of modified files
 
-**npm run start** a local server will start, which will launch the html page and will also track changes in the files.
+**npm run start** - a local server will start, which will launch the html page and will also track changes in the files.
 
 <!-- **npm run dev** сборка dev-версии.
 
