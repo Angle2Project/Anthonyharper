@@ -1179,41 +1179,41 @@
           line-height: 1.86;
           letter-spacing: normal;
           text-align: center;
+        }        
+      }
+    }
+  }
+  .careers__current_list {
+    margin-top: 51px;
+    width: auto;
+    margin-bottom: 85px;
+    li {
+      flex-direction: column;
+      padding: 29px 42px 36px 42px;
+      .li--body {
+        width: auto;
+        .li--description {
+          margin-top: 13px;
+          font-family: Helvetica;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.86;
+          letter-spacing: normal;
         }
-        .careers__current_list {
-          margin-top: 51px;
-          width: auto;
-          margin-bottom: 85px;
-          li {
-            flex-direction: column;
-            padding: 29px 42px 36px 42px;
-            .li--body {
-              width: auto;
-              .li--description {
-                margin-top: 13px;
-                font-family: Helvetica;
-                font-size: 14px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.86;
-                letter-spacing: normal;
-              }
-            }
-            .li--more {
-              margin-top: 8px;
-              display: block;
-              width: 100%;
-              .orange-button {
-                width: 100%;
-                span::before {
-                  width: 35px;
-                }
-                &:hover span::before {
-                  width: 45px;
-                }
-              }
-            }
+      }
+      .li--more {
+        margin-top: 8px;
+        display: block;
+        width: 100%;
+        .orange-button {
+          width: 100%;
+          span::before {
+            width: 35px;
+          }
+          &:hover span::before {
+            width: 45px;
           }
         }
       }
