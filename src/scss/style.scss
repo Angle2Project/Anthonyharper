@@ -3165,6 +3165,25 @@ footer {
       img {
         max-width: 100%;
       }
+      ol {
+        list-style: none;
+        counter-reset: list;
+        li {
+          padding-left: 30px;
+          position: relative;
+          counter-increment: list;
+          &::before {
+            content: counter(list);
+            display: block;            
+            color: #e6792c;
+            position: absolute;
+            left: 0;
+            top: 6px;
+            font-size: 12px;
+            font-weight: bold;
+          }
+        }
+      }
       ul {
         li {
           padding-left: 30px;
