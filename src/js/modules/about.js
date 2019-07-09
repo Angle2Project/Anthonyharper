@@ -21,14 +21,18 @@ export default function thinking() {
 		$(this).addClass('index');
 		$(this).find('.dropdown__list').slideDown(200);
 	});
+	$('.dropdown li.sub').mouseenter(function(){		
+		$(this).find('.dropdown__list_sub').slideDown(150);
+	});
 	$('.dropdown').mouseleave(function(){
 		let el = $(this);
 		$(this).removeClass('hover');
+		$(this).find('.dropdown__list_sub').slideUp(200);
 		$(this).find('.dropdown__list').slideUp(200, function(){
 			el.removeClass('index');
 		});
-	});
-	$('.dropdown__list li').click(function(){
+	});	
+	$('.dropdown__list li:not(.sub)').click(function(){
 		let el = $(this);
 		let val = $(this).attr('data-value');
 		let text = $(this).text();
@@ -96,6 +100,13 @@ export default function thinking() {
 			}    
 			$('body').addClass('no-scroll');
 			$('.modal-specialties').addClass('modal-show');    
+		});
+		
+		$("#about-name-filter").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$(".about__team_list li").filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
 		});
 		
 };

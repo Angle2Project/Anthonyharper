@@ -129,7 +129,15 @@ _.template(require('./../includes/header.html'))(data) %>
             <span class="current" data-placeholder="Headquarter">Headquarter</span>
             <ul class="dropdown__list">
               <li data-value="choose-1">Choose #1</li>
-              <li data-value="choose-1">Business Development and Marketing Manager</li>
+              <li class="sub">
+                <span>Business</span>
+                <ul class="dropdown__list_sub">
+                  <li data-value="choose-2">Business Development and Marketing Manager</li>
+                  <li data-value="choose-2">Headquarter</li>
+                  <li data-value="choose-2">Sub 1</li>
+                  <li data-value="choose-2">Sub 2</li>
+                </ul>
+              </li>
               <li data-value="choose-1">Choose #3</li>
               <li data-value="choose-1">Choose #4</li>
             </ul>
@@ -145,18 +153,7 @@ _.template(require('./../includes/header.html'))(data) %>
               <li data-value="choose-1">Choose #4</li>
             </ul>
           </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <span class="current" data-placeholder="Name">Name</span>
-            <ul class="dropdown__list">
-              <li data-value="choose-1">Choose #1</li>
-              <li data-value="choose-1">Choose #2</li>
-              <li data-value="choose-1">Choose #3</li>
-              <li data-value="choose-1">Choose #4</li>
-            </ul>
-          </div>
-        </li>
+        </li>        
         <li>
           <div class="dropdown">
             <span class="current" data-placeholder="Team">Team</span>
@@ -167,6 +164,9 @@ _.template(require('./../includes/header.html'))(data) %>
               <li data-value="choose-1">Choose #4</li>
             </ul>
           </div>
+        </li>
+        <li>
+          <input type="text" id="about-name-filter" placeholder="Name">
         </li>
       </ul>
     </section>
