@@ -7,6 +7,12 @@ export default function home() {
     mask: '(00)000 0000'
   });
 
+
+  // Video in slider 
+  $('.home__main-slider .swiper-slide .video').click(function(e){
+    $(this).addClass('active');
+  });
+
   // Swiper init  
   var homeTopSwiper = new Swiper('.home__main-slider .swiper-container', {
       navigation: {
