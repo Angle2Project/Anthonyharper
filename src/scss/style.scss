@@ -2108,7 +2108,10 @@ header .wrapper {
    ========================================================================== */
 
 @media print {
-  .about.no-scroll {
+  .about.no-scroll,
+  .specialities.no-scroll,
+  .home.no-scroll,
+  .single.no-scroll {
     padding-top: 50px;
     .about__head,
     .about__head_title,
@@ -2116,12 +2119,18 @@ header .wrapper {
     .about__difference,
     .about__team,
     .about__getin,
+    main>article {
+      display: none;
+    }
     header,
     footer {
       display: none;
     }
     .modal {
       position: static;
+    }
+    .modal__close {
+      display: none;
     }
     .modal__scroll {
       &::after {
@@ -2144,6 +2153,10 @@ header .wrapper {
           flex-shrink: 0;
           margin-bottom: 0;
           order: 1;
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
         .title--name {
           order: 3;
@@ -2156,7 +2169,8 @@ header .wrapper {
         }
         .title--list {
           order: 2;
-          margin-top: 0;          
+          margin-top: 0;
+          width: 60vw;
         }
       }
       .modal__flex_body {
@@ -2191,6 +2205,52 @@ header .wrapper {
   }
   header {
     display: none;
+  }
+  .modal.modal-specialties {
+    .modal__wrapper {
+      margin: 0;
+      padding: 0;
+    }
+    .modal__title {
+      position: relative;
+      top: 0;
+      left: 0;
+      h3 {
+        background: transparent;
+        color: #000;
+        padding-left: 0;
+      }
+      .short-text {
+        padding-left: 0;
+      }
+    }
+    .modal__body {
+      margin: 0;  
+      .modal__article {
+        height: auto!important;
+        &>* {
+          width: 100%;
+        }
+      }
+      .modal__expertise {
+        display: none;
+      }
+      .modal__transactions {
+        &::after {
+          display: none;
+        }
+        ul {
+          height: auto!important;
+          display: block!important;
+          li {
+            width: 100%;            
+            &::before {
+              background-color: #000;
+            }
+          }
+        }
+      }
+    }    
   }
 }
    

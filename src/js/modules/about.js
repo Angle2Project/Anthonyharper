@@ -36,6 +36,7 @@ export default function thinking() {
 		let el = $(this);
 		let val = $(this).attr('data-value');
 		let text = $(this).text();
+		$('#about-name-filter').val('');
 		$('.about__team_filters .dropdown').removeClass('selected');
 		$('.about__team_filters .dropdown').each(function(i, el){
 			let plaeceholder = $(el).find('.current').attr('data-placeholder');

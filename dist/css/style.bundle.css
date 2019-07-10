@@ -91,9 +91,6 @@ body {
   background-color: #fff;
   font-family: "Verdana"; }
 
-body.no-scroll {
-  overflow: hidden; }
-
 a {
   text-decoration: none; }
 
@@ -2399,7 +2396,10 @@ header .wrapper {
    About-us
    ========================================================================== */
 @media print {
-  .about.no-scroll {
+  .about.no-scroll,
+  .specialities.no-scroll,
+  .home.no-scroll,
+  .single.no-scroll {
     padding-top: 50px; }
     .about.no-scroll .about__head,
     .about.no-scroll .about__head_title,
@@ -2407,59 +2407,184 @@ header .wrapper {
     .about.no-scroll .about__difference,
     .about.no-scroll .about__team,
     .about.no-scroll .about__getin,
+    .about.no-scroll main > article,
+    .specialities.no-scroll .about__head,
+    .specialities.no-scroll .about__head_title,
+    .specialities.no-scroll .about__vision,
+    .specialities.no-scroll .about__difference,
+    .specialities.no-scroll .about__team,
+    .specialities.no-scroll .about__getin,
+    .specialities.no-scroll main > article,
+    .home.no-scroll .about__head,
+    .home.no-scroll .about__head_title,
+    .home.no-scroll .about__vision,
+    .home.no-scroll .about__difference,
+    .home.no-scroll .about__team,
+    .home.no-scroll .about__getin,
+    .home.no-scroll main > article,
+    .single.no-scroll .about__head,
+    .single.no-scroll .about__head_title,
+    .single.no-scroll .about__vision,
+    .single.no-scroll .about__difference,
+    .single.no-scroll .about__team,
+    .single.no-scroll .about__getin,
+    .single.no-scroll main > article {
+      display: none; }
     .about.no-scroll header,
-    .about.no-scroll footer {
+    .about.no-scroll footer,
+    .specialities.no-scroll header,
+    .specialities.no-scroll footer,
+    .home.no-scroll header,
+    .home.no-scroll footer,
+    .single.no-scroll header,
+    .single.no-scroll footer {
       display: none; }
-    .about.no-scroll .modal {
+    .about.no-scroll .modal,
+    .specialities.no-scroll .modal,
+    .home.no-scroll .modal,
+    .single.no-scroll .modal {
       position: static; }
-    .about.no-scroll .modal__scroll::after {
+    .about.no-scroll .modal__close,
+    .specialities.no-scroll .modal__close,
+    .home.no-scroll .modal__close,
+    .single.no-scroll .modal__close {
       display: none; }
-    .about.no-scroll .modal .modal__wrapper {
+    .about.no-scroll .modal__scroll::after,
+    .specialities.no-scroll .modal__scroll::after,
+    .home.no-scroll .modal__scroll::after,
+    .single.no-scroll .modal__scroll::after {
+      display: none; }
+    .about.no-scroll .modal .modal__wrapper,
+    .specialities.no-scroll .modal .modal__wrapper,
+    .home.no-scroll .modal .modal__wrapper,
+    .single.no-scroll .modal .modal__wrapper {
       width: 100%;
       margin: 0;
       padding: 0; }
-    .about.no-scroll .modal__flex {
+    .about.no-scroll .modal__flex,
+    .specialities.no-scroll .modal__flex,
+    .home.no-scroll .modal__flex,
+    .single.no-scroll .modal__flex {
       flex-direction: column; }
-      .about.no-scroll .modal__flex .modal__flex_title {
+      .about.no-scroll .modal__flex .modal__flex_title,
+      .specialities.no-scroll .modal__flex .modal__flex_title,
+      .home.no-scroll .modal__flex .modal__flex_title,
+      .single.no-scroll .modal__flex .modal__flex_title {
         display: flex;
         position: relative;
         flex-wrap: wrap; }
-        .about.no-scroll .modal__flex .modal__flex_title .title--photo {
+        .about.no-scroll .modal__flex .modal__flex_title .title--photo,
+        .specialities.no-scroll .modal__flex .modal__flex_title .title--photo,
+        .home.no-scroll .modal__flex .modal__flex_title .title--photo,
+        .single.no-scroll .modal__flex .modal__flex_title .title--photo {
           width: 30vw;
           flex-shrink: 0;
           margin-bottom: 0;
           order: 1; }
-        .about.no-scroll .modal__flex .modal__flex_title .title--name {
+          .about.no-scroll .modal__flex .modal__flex_title .title--photo img,
+          .specialities.no-scroll .modal__flex .modal__flex_title .title--photo img,
+          .home.no-scroll .modal__flex .modal__flex_title .title--photo img,
+          .single.no-scroll .modal__flex .modal__flex_title .title--photo img {
+            width: 100%;
+            height: 100%; }
+        .about.no-scroll .modal__flex .modal__flex_title .title--name,
+        .specialities.no-scroll .modal__flex .modal__flex_title .title--name,
+        .home.no-scroll .modal__flex .modal__flex_title .title--name,
+        .single.no-scroll .modal__flex .modal__flex_title .title--name {
           order: 3;
           width: 100%;
           background-color: transparent; }
           .about.no-scroll .modal__flex .modal__flex_title .title--name b,
-          .about.no-scroll .modal__flex .modal__flex_title .title--name span {
+          .about.no-scroll .modal__flex .modal__flex_title .title--name span,
+          .specialities.no-scroll .modal__flex .modal__flex_title .title--name b,
+          .specialities.no-scroll .modal__flex .modal__flex_title .title--name span,
+          .home.no-scroll .modal__flex .modal__flex_title .title--name b,
+          .home.no-scroll .modal__flex .modal__flex_title .title--name span,
+          .single.no-scroll .modal__flex .modal__flex_title .title--name b,
+          .single.no-scroll .modal__flex .modal__flex_title .title--name span {
             color: #4c5c4f; }
-        .about.no-scroll .modal__flex .modal__flex_title .title--list {
+        .about.no-scroll .modal__flex .modal__flex_title .title--list,
+        .specialities.no-scroll .modal__flex .modal__flex_title .title--list,
+        .home.no-scroll .modal__flex .modal__flex_title .title--list,
+        .single.no-scroll .modal__flex .modal__flex_title .title--list {
           order: 2;
-          margin-top: 0; }
-      .about.no-scroll .modal__flex .modal__flex_body {
+          margin-top: 0;
+          width: 60vw; }
+      .about.no-scroll .modal__flex .modal__flex_body,
+      .specialities.no-scroll .modal__flex .modal__flex_body,
+      .home.no-scroll .modal__flex .modal__flex_body,
+      .single.no-scroll .modal__flex .modal__flex_body {
         margin: 0 30px; }
-        .about.no-scroll .modal__flex .modal__flex_body .modal__article {
+        .about.no-scroll .modal__flex .modal__flex_body .modal__article,
+        .specialities.no-scroll .modal__flex .modal__flex_body .modal__article,
+        .home.no-scroll .modal__flex .modal__flex_body .modal__article,
+        .single.no-scroll .modal__flex .modal__flex_body .modal__article {
           flex-direction: row;
           height: auto !important; }
-          .about.no-scroll .modal__flex .modal__flex_body .modal__article p {
+          .about.no-scroll .modal__flex .modal__flex_body .modal__article p,
+          .specialities.no-scroll .modal__flex .modal__flex_body .modal__article p,
+          .home.no-scroll .modal__flex .modal__flex_body .modal__article p,
+          .single.no-scroll .modal__flex .modal__flex_body .modal__article p {
             font-size: 16px; }
-          .about.no-scroll .modal__flex .modal__flex_body .modal__article > * {
+          .about.no-scroll .modal__flex .modal__flex_body .modal__article > *,
+          .specialities.no-scroll .modal__flex .modal__flex_body .modal__article > *,
+          .home.no-scroll .modal__flex .modal__flex_body .modal__article > *,
+          .single.no-scroll .modal__flex .modal__flex_body .modal__article > * {
             width: 100%; }
-        .about.no-scroll .modal__flex .modal__flex_body .modal__transactions {
+        .about.no-scroll .modal__flex .modal__flex_body .modal__transactions,
+        .specialities.no-scroll .modal__flex .modal__flex_body .modal__transactions,
+        .home.no-scroll .modal__flex .modal__flex_body .modal__transactions,
+        .single.no-scroll .modal__flex .modal__flex_body .modal__transactions {
           margin-right: 0; }
-          .about.no-scroll .modal__flex .modal__flex_body .modal__transactions ul {
+          .about.no-scroll .modal__flex .modal__flex_body .modal__transactions ul,
+          .specialities.no-scroll .modal__flex .modal__flex_body .modal__transactions ul,
+          .home.no-scroll .modal__flex .modal__flex_body .modal__transactions ul,
+          .single.no-scroll .modal__flex .modal__flex_body .modal__transactions ul {
             margin: 0;
             height: auto !important; }
-            .about.no-scroll .modal__flex .modal__flex_body .modal__transactions ul li {
+            .about.no-scroll .modal__flex .modal__flex_body .modal__transactions ul li,
+            .specialities.no-scroll .modal__flex .modal__flex_body .modal__transactions ul li,
+            .home.no-scroll .modal__flex .modal__flex_body .modal__transactions ul li,
+            .single.no-scroll .modal__flex .modal__flex_body .modal__transactions ul li {
               width: auto;
               font-size: 16px; }
-      .about.no-scroll .modal__flex .modal__info-list {
+      .about.no-scroll .modal__flex .modal__info-list,
+      .specialities.no-scroll .modal__flex .modal__info-list,
+      .home.no-scroll .modal__flex .modal__info-list,
+      .single.no-scroll .modal__flex .modal__info-list {
         font-size: 16px; }
   header {
-    display: none; } }
+    display: none; }
+  .modal.modal-specialties .modal__wrapper {
+    margin: 0;
+    padding: 0; }
+  .modal.modal-specialties .modal__title {
+    position: relative;
+    top: 0;
+    left: 0; }
+    .modal.modal-specialties .modal__title h3 {
+      background: transparent;
+      color: #000;
+      padding-left: 0; }
+    .modal.modal-specialties .modal__title .short-text {
+      padding-left: 0; }
+  .modal.modal-specialties .modal__body {
+    margin: 0; }
+    .modal.modal-specialties .modal__body .modal__article {
+      height: auto !important; }
+      .modal.modal-specialties .modal__body .modal__article > * {
+        width: 100%; }
+    .modal.modal-specialties .modal__body .modal__expertise {
+      display: none; }
+    .modal.modal-specialties .modal__body .modal__transactions::after {
+      display: none; }
+    .modal.modal-specialties .modal__body .modal__transactions ul {
+      height: auto !important;
+      display: block !important; }
+      .modal.modal-specialties .modal__body .modal__transactions ul li {
+        width: 100%; }
+        .modal.modal-specialties .modal__body .modal__transactions ul li::before {
+          background-color: #000; } }
 
 .about__head {
   height: 523px;
