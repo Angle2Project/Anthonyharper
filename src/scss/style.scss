@@ -2119,7 +2119,9 @@ header .wrapper {
     .about__difference,
     .about__team,
     .about__getin,
-    main>article {
+    main>article,
+    main > .single-item,
+    #map {
       display: none;
     }
     header,

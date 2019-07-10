@@ -91,6 +91,9 @@ body {
   background-color: #fff;
   font-family: "Verdana"; }
 
+body.no-scroll {
+  overflow: hidden; }
+
 a {
   text-decoration: none; }
 
@@ -2408,6 +2411,8 @@ header .wrapper {
     .about.no-scroll .about__team,
     .about.no-scroll .about__getin,
     .about.no-scroll main > article,
+    .about.no-scroll main > .single-item,
+    .about.no-scroll #map,
     .specialities.no-scroll .about__head,
     .specialities.no-scroll .about__head_title,
     .specialities.no-scroll .about__vision,
@@ -2415,6 +2420,8 @@ header .wrapper {
     .specialities.no-scroll .about__team,
     .specialities.no-scroll .about__getin,
     .specialities.no-scroll main > article,
+    .specialities.no-scroll main > .single-item,
+    .specialities.no-scroll #map,
     .home.no-scroll .about__head,
     .home.no-scroll .about__head_title,
     .home.no-scroll .about__vision,
@@ -2422,13 +2429,17 @@ header .wrapper {
     .home.no-scroll .about__team,
     .home.no-scroll .about__getin,
     .home.no-scroll main > article,
+    .home.no-scroll main > .single-item,
+    .home.no-scroll #map,
     .single.no-scroll .about__head,
     .single.no-scroll .about__head_title,
     .single.no-scroll .about__vision,
     .single.no-scroll .about__difference,
     .single.no-scroll .about__team,
     .single.no-scroll .about__getin,
-    .single.no-scroll main > article {
+    .single.no-scroll main > article,
+    .single.no-scroll main > .single-item,
+    .single.no-scroll #map {
       display: none; }
     .about.no-scroll header,
     .about.no-scroll footer,
