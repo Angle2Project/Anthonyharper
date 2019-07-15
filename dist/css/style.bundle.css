@@ -4474,6 +4474,303 @@ footer {
       .modal .modal__flex {
         flex-direction: column; } }
 
+.profile {
+  padding: 30px 0; }
+  .profile .modal__flex {
+    display: flex; }
+    .profile .modal__flex .modal__flex_title .title--photo {
+      width: 360px;
+      margin-bottom: -50px;
+      margin-left: 30px;
+      z-index: 0; }
+      .profile .modal__flex .modal__flex_title .title--photo img {
+        width: 100%; }
+      @media screen and (max-width: 900px) {
+        .profile .modal__flex .modal__flex_title .title--photo {
+          width: auto;
+          margin: 0 auto -50px auto;
+          max-width: 360px; } }
+    .profile .modal__flex .modal__flex_title .title--name {
+      width: 360px;
+      background-color: #e6792c;
+      padding: 22px 20px 18px 30px;
+      position: relative;
+      margin-right: 30px; }
+      .profile .modal__flex .modal__flex_title .title--name b {
+        font-family: "Verdana";
+        font-size: 32px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.47;
+        letter-spacing: normal;
+        color: #ffffff;
+        display: block; }
+        @media screen and (max-width: 900px) {
+          .profile .modal__flex .modal__flex_title .title--name b {
+            font-size: 28px; } }
+      .profile .modal__flex .modal__flex_title .title--name span {
+        display: block;
+        font-family: "Verdana";
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.43;
+        letter-spacing: normal;
+        color: #ffffff;
+        opacity: 0.6; }
+      @media screen and (max-width: 900px) {
+        .profile .modal__flex .modal__flex_title .title--name {
+          width: auto;
+          max-width: 360px; } }
+    .profile .modal__flex .modal__flex_title .title--list {
+      list-style: none;
+      margin: 54px 0 0 30px;
+      padding: 0; }
+      .profile .modal__flex .modal__flex_title .title--list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px; }
+        .profile .modal__flex .modal__flex_title .title--list li:last-child {
+          margin-bottom: 0; }
+        .profile .modal__flex .modal__flex_title .title--list li i {
+          width: 25px;
+          height: 25px;
+          margin-right: 51px;
+          text-align: center; }
+          .profile .modal__flex .modal__flex_title .title--list li i img {
+            max-width: 100%;
+            max-height: 100%; }
+        .profile .modal__flex .modal__flex_title .title--list li span {
+          font-family: "Verdana";
+          font-size: 18px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.89;
+          letter-spacing: normal;
+          color: #8f8f8f; }
+        .profile .modal__flex .modal__flex_title .title--list li a {
+          font-family: "Verdana";
+          font-size: 18px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.89;
+          letter-spacing: normal;
+          color: #8f8f8f;
+          transition: all 250ms ease; }
+          .profile .modal__flex .modal__flex_title .title--list li a:hover {
+            color: #e6792c; }
+          @media screen and (max-width: 900px) {
+            .profile .modal__flex .modal__flex_title .title--list li a {
+              font-size: 16px; } }
+    .profile .modal__flex .modal__flex_body {
+      margin-left: 120px;
+      flex-grow: 1; }
+      @media screen and (max-width: 900px) {
+        .profile .modal__flex .modal__flex_body {
+          margin-left: 8.33vw;
+          margin-top: 54px; } }
+    @media screen and (max-width: 900px) {
+      .profile .modal__flex {
+        flex-direction: column; } }
+    .profile .modal__flex .modal__info-list {
+      padding: 0;
+      margin: 0 0 30px 0;
+      list-style: none;
+      font-family: Verdana;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.79;
+      letter-spacing: normal;
+      color: #e6792c; }
+  .profile .modal__article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .profile .modal__article > * {
+      margin: 0 0 30px 0; }
+      .profile .modal__article > *.solo {
+        width: auto;
+        padding-right: 30px; }
+      @media screen and (max-width: 900px) {
+        .profile .modal__article > * {
+          width: auto;
+          padding-right: 30px; } }
+    .profile .modal__article > label {
+      display: block;
+      font-family: "Verdana";
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #e6792c; }
+    .profile .modal__article p {
+      font-family: "Verdana";
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.79;
+      letter-spacing: normal;
+      color: #9c9c9c; }
+      @media screen and (max-width: 1440px) {
+        .profile .modal__article p {
+          font-size: 16px; } }
+      @media screen and (max-width: 900px) {
+        .profile .modal__article p {
+          font-size: 14px; } }
+    .profile .modal__article .li {
+      padding-left: 30px;
+      position: relative; }
+      .profile .modal__article .li::before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: #e6792c;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 14px; }
+    .profile .modal__article b {
+      font-weight: bold;
+      color: #4c5c4f; }
+    .profile .modal__article blockquote {
+      display: block;
+      background: url("../img/qoute.svg") no-repeat 0 31px/39px 34px; }
+      .profile .modal__article blockquote label {
+        display: block;
+        font-family: "Verdana";
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #e6792c; }
+      .profile .modal__article blockquote span {
+        display: block;
+        margin: 37px 0 0 47px;
+        font-family: "Verdana";
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.7;
+        letter-spacing: normal;
+        color: #4c5c4f; }
+        @media screen and (max-width: 1440px) {
+          .profile .modal__article blockquote span {
+            font-size: 18px; } }
+        @media screen and (max-width: 900px) {
+          .profile .modal__article blockquote span {
+            font-size: 16px; } }
+    .profile .modal__article a {
+      color: #e6792c;
+      text-decoration: underline;
+      display: block;
+      font-size: 18px; }
+      @media screen and (max-width: 1440px) {
+        .profile .modal__article a {
+          font-size: 16px; } }
+      @media screen and (max-width: 900px) {
+        .profile .modal__article a {
+          font-size: 14px; } }
+      .profile .modal__article a:hover {
+        text-decoration: none; }
+    @media screen and (max-width: 900px) {
+      .profile .modal__article {
+        height: auto !important;
+        margin-right: 30px; } }
+  .profile .modal__transactions {
+    border-top: 1px solid #a0b3a3;
+    padding: 47px 0;
+    margin-right: 30px;
+    position: relative; }
+    .profile .modal__transactions.open::after {
+      transform: rotate(180deg); }
+    .profile .modal__transactions .modal__transactions_title {
+      font-family: "Verdana";
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #e6792c; }
+    .profile .modal__transactions ul {
+      list-style: none;
+      margin: 0 -30px -30px 0;
+      padding: 30px 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .profile .modal__transactions ul li {
+        width: calc(50% - 30px);
+        margin-bottom: 30px;
+        padding-left: 30px;
+        position: relative;
+        font-family: "Verdana";
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.79;
+        letter-spacing: normal;
+        color: #9c9c9c; }
+        @media screen and (max-width: 1440px) {
+          .profile .modal__transactions ul li {
+            font-size: 16px; } }
+        @media screen and (max-width: 900px) {
+          .profile .modal__transactions ul li {
+            font-size: 14px; } }
+        .profile .modal__transactions ul li::before {
+          content: "";
+          display: block;
+          width: 6px;
+          height: 6px;
+          background-color: #e6792c;
+          border-radius: 50%;
+          position: absolute;
+          left: 0;
+          top: 14px; }
+        @media screen and (max-width: 900px) {
+          .profile .modal__transactions ul li {
+            width: auto; } }
+      @media screen and (max-width: 900px) {
+        .profile .modal__transactions ul {
+          height: auto !important;
+          margin: 0  0 -30px 0; } }
+  .profile .modal__awards {
+    border-top: 1px solid #a0b3a3;
+    margin-right: 30px;
+    padding: 17px 0; }
+    .profile .modal__awards .modal__awards_title {
+      font-family: "Verdana";
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #e6792c; }
+    .profile .modal__awards .modal__awards_list {
+      margin-top: 42px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      .profile .modal__awards .modal__awards_list img {
+        max-height: 100px;
+        margin-right: 10px;
+        margin-bottom: 30px; }
+
 @media screen and (max-width: 1200px) {
   /* ==========================================================================
    Header

@@ -26811,6 +26811,20 @@ function thinking() {
       $('.about .filters--list').toggleClass('active');
     }
   });
+
+  if ($('.profile .modal__transactions').length) {
+    $('.profile .modal__transactions ul').removeAttr('style');
+    $('.profile .modal__transactions ul').each(function (i, el) {
+      var summ = 0;
+      var h = $(el).height() / 2;
+      $(el).find('li').each(function (i, el) {
+        if (summ > h) return;
+        summ += $(el).height() + 50;
+      });
+      $(el).height(summ);
+    });
+  }
+
   $(window).resize(function () {
     if ($('.modal').is(':visible')) {
       $('.modal').fadeOut(300, function () {

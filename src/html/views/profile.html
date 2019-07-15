@@ -1,0 +1,101 @@
+<% var data = { title: "Anthony Harper", name: "about", }; %> <%=
+_.template(require('./../includes/header.html'))(data) %>
+
+<article class="profile">
+  <div class="wrapper">
+      <div class="modal__flex">
+          <div class="modal__flex_title">
+            <div class="title--photo">
+              <img src="./img/modal-photo.jpg" alt="">
+            </div>
+            <div class="title--name">
+              <b>Jackie Behrnes</b>
+              <span>Partner</span>
+            </div>
+            <ul class="title--list">
+              <li>
+                <!-- <i>
+                  <img src="./img/suitcase.svg" alt="">
+                </i> -->
+                <span>
+                    <a href="javascript:void(0)" data-specialty-id="568">Automotive</a>
+                    |
+                    <a href="javascript:void(0)" data-specialty-id="571">Corporate Advisory</a>
+                    |
+                    <a href="javascript:void(0)" data-specialty-id="575">Food &amp; Beverage</a>
+                    |
+                    <a href="javascript:void(0)" data-specialty-id="600">Retail</a>
+                  </span>
+              </li>
+              <li>
+                <i>
+                  <img src="./img/mail.svg" alt="">
+                </i>                    
+                <a href="mailto:jackie.behrnes@ah.co.nz">jackie.behrnes@ah.co.nz</a>
+              </li>
+              <li>
+                <i>
+                  <img src="./img/phone-call.svg" alt="">
+                </i>
+                <a href="tel:+6421918551">+64 21 918 551</a>
+              </li>
+              <li>
+                <i>
+                  <img src="./img/smartphone.svg" alt="">
+                </i>
+                <a href="tel:+6433643810">+64 3 364 3810</a>
+              </li>                    
+            </ul>
+          </div>
+          <div class="modal__flex_body">
+            <ul class="modal__info-list">
+                <li>Jackie Behrnes</li>
+                <li>Partner</li>
+                <li>Corporate Advisory | Retail | Automotive</li>
+                <li>Kiev</li>
+            </ul>
+            <div class="modal__article">
+              <p>
+                <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</b>
+              </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+            </div>
+
+            <div class="modal__awards">                  
+              <div class="modal__awards_list">
+                <img src="./img/modal-awards-1" alt="">
+                <img src="./img/modal-awards-2" alt="">
+                <img src="./img/modal-awards-3" alt="">
+              </div>
+            </div>
+
+            <div class="modal__transactions">
+              <div class="modal__transactions_title">Representative Transactions</div>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>                      
+              </ul>
+            </div>
+
+            <div class="modal__transactions">
+                <div class="modal__transactions_title">Representative Transactions</div>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
+                  <li>Lorem ipsum dolor sit amet, consectetur </li>
+                  <li>Lorem ipsum dolor sit amet, consectetur </li>
+                </ul>
+              </div>
+          </div>
+        </div> 
+  </div>
+</article>
+<!-- /.profile -->
+
+
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
