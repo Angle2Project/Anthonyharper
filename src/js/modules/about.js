@@ -14,7 +14,7 @@ export default function thinking() {
 				if(summ > h)return;
 				summ += ($(el).height());
 			})				
-				$(el).height(summ + 50);
+				$(el).height(summ + 100);
 		});		  	
 	};
 
