@@ -2108,10 +2108,14 @@ header .wrapper {
    ========================================================================== */
 
 @media print {
+  .profile {
+    margin-top: -100px;
+  }
   .about.no-scroll,
   .specialities.no-scroll,
   .home.no-scroll,
-  .single.no-scroll {
+  .single.no-scroll,
+  .profile {    
     padding-top: 50px;
     .about__head,
     .about__head_title,
@@ -2205,7 +2209,8 @@ header .wrapper {
 
     }
   }
-  header {
+  header,
+  footer {
     display: none;
   }
   .modal.modal-specialties {

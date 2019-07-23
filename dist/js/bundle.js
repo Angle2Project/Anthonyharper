@@ -26812,20 +26812,28 @@ function thinking() {
     }
   });
 
-  if ($('.profile .modal__transactions').length) {
+  var modalTransactions = function modalTransactions() {
     $('.profile .modal__transactions ul').removeAttr('style');
     $('.profile .modal__transactions ul').each(function (i, el) {
       var summ = 0;
       var h = $(el).height() / 2;
       $(el).find('li').each(function (i, el) {
         if (summ > h) return;
-        summ += $(el).height() + 50;
+        summ += $(el).height();
       });
-      $(el).height(summ);
+      $(el).height(summ + 50);
     });
+  };
+
+  if ($('.profile .modal__transactions').length) {
+    modalTransactions();
   }
 
   $(window).resize(function () {
+    if ($('.profile .modal__transactions').length) {
+      modalTransactions();
+    }
+
     if ($('.modal').is(':visible')) {
       $('.modal').fadeOut(300, function () {
         $('body').removeClass('no-scroll');
