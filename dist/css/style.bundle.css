@@ -992,7 +992,8 @@ header .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  cursor: pointer; }
 
 .home__specialties_list .home__specialties_list--item:hover {
   background-color: #f4e1d4; }
